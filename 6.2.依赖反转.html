@@ -1,0 +1,1157 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>依赖反转 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.3.多可用区分布.html" />
+    
+    
+    <link rel="prev" href="6.1.有条件创建.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Terraform初步体验.html">
+            
+                <a href="1.Terraform初步体验.html">
+            
+                    
+                    Terraform初步体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Terraform基础概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1.Terraform基础概念——Provider.html">
+            
+                <a href="2.1.Terraform基础概念——Provider.html">
+            
+                    
+                    Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2.Terraform基础概念——状态管理.html">
+            
+                <a href="2.2.Terraform基础概念——状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Terraform代码的书写.html">
+            
+                <a href="3.Terraform代码的书写.html">
+            
+                    
+                    Terraform代码的书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.类型.html">
+            
+                <a href="3.1.类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2.配置语法.html">
+            
+                <a href="3.2.配置语法.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.输入变量.html">
+            
+                <a href="3.3.输入变量.html">
+            
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4.输出值.html">
+            
+                <a href="3.4.输出值.html">
+            
+                    
+                    输出值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3.5.局部值.html">
+            
+                <a href="3.5.局部值.html">
+            
+                    
+                    局部值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6.资源.html">
+            
+                <a href="3.6.资源.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7.数据源.html">
+            
+                <a href="3.7.数据源.html">
+            
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8.表达式.html">
+            
+                <a href="3.8.表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9.重载文件.html">
+            
+                <a href="3.9.重载文件.html">
+            
+                    
+                    重载文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3.10.代码风格规范.html">
+            
+                <a href="3.10.代码风格规范.html">
+            
+                    
+                    代码风格规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Terraform模块.html">
+            
+                <a href="4.Terraform模块.html">
+            
+                    
+                    Terraform模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1.创建模块.html">
+            
+                <a href="4.1.创建模块.html">
+            
+                    
+                    创建模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2.使用模块.html">
+            
+                <a href="4.2.使用模块.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.Terraform命令行.html">
+            
+                <a href="5.Terraform命令行.html">
+            
+                    
+                    Terraform命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1.命令行配置文件.html">
+            
+                <a href="5.1.命令行配置文件.html">
+            
+                    
+                    命令行配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2.环境变量.html">
+            
+                <a href="5.2.环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3.资源地址.html">
+            
+                <a href="5.3.资源地址.html">
+            
+                    
+                    资源地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4.apply.html">
+            
+                <a href="5.4.apply.html">
+            
+                    
+                    apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5.console.html">
+            
+                <a href="5.5.console.html">
+            
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="5.6.destroy.html">
+            
+                <a href="5.6.destroy.html">
+            
+                    
+                    destroy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="5.7.fmt.html">
+            
+                <a href="5.7.fmt.html">
+            
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.8.force-unlock.html">
+            
+                <a href="5.8.force-unlock.html">
+            
+                    
+                    force-unlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="5.9.get.html">
+            
+                <a href="5.9.get.html">
+            
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="5.10.graph.html">
+            
+                <a href="5.10.graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="5.11.import.html">
+            
+                <a href="5.11.import.html">
+            
+                    
+                    import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="5.12.init.html">
+            
+                <a href="5.12.init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="5.13.output.html">
+            
+                <a href="5.13.output.html">
+            
+                    
+                    output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="5.14.plan.html">
+            
+                <a href="5.14.plan.html">
+            
+                    
+                    plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="5.15.providers.html">
+            
+                <a href="5.15.providers.html">
+            
+                    
+                    providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="5.16.refresh.html">
+            
+                <a href="5.16.refresh.html">
+            
+                    
+                    refresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="5.17.show.html">
+            
+                <a href="5.17.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="5.18.state.html">
+            
+                <a href="5.18.state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.18.1" data-path="5.18.1.list.html">
+            
+                <a href="5.18.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.2" data-path="5.18.2.mv.html">
+            
+                <a href="5.18.2.mv.html">
+            
+                    
+                    mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.3" data-path="5.18.3.pull.html">
+            
+                <a href="5.18.3.pull.html">
+            
+                    
+                    pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.4" data-path="5.18.4.push.html">
+            
+                <a href="5.18.4.push.html">
+            
+                    
+                    push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.5" data-path="5.18.5.replace-provider.html">
+            
+                <a href="5.18.5.replace-provider.html">
+            
+                    
+                    replace-provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.6" data-path="5.18.6.rm.html">
+            
+                <a href="5.18.6.rm.html">
+            
+                    
+                    rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.7" data-path="5.18.7.show.html">
+            
+                <a href="5.18.7.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="5.19.taint.html">
+            
+                <a href="5.19.taint.html">
+            
+                    
+                    taint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="5.20.validate.html">
+            
+                <a href="5.20.validate.html">
+            
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="5.21.untaint.html">
+            
+                <a href="5.21.untaint.html">
+            
+                    
+                    untaint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="5.22.workspace.html">
+            
+                <a href="5.22.workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.22.1" data-path="5.22.1.list.html">
+            
+                <a href="5.22.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.2" data-path="5.22.2.select.html">
+            
+                <a href="5.22.2.select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.3" data-path="5.22.3.new.html">
+            
+                <a href="5.22.3.new.html">
+            
+                    
+                    new
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.4" data-path="5.22.4.delete.html">
+            
+                <a href="5.22.4.delete.html">
+            
+                    
+                    delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.5" data-path="5.22.5.show.html">
+            
+                <a href="5.22.5.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path=".6.Aha.md">
+            
+                <span>
+            
+                    
+                    Aha
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1.有条件创建.html">
+            
+                <a href="6.1.有条件创建.html">
+            
+                    
+                    有条件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="6.2.依赖反转.html">
+            
+                <a href="6.2.依赖反转.html">
+            
+                    
+                    依赖反转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3.多可用区分布.html">
+            
+                <a href="6.3.多可用区分布.html">
+            
+                    
+                    多可用区分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6.4.provisioner与user_data.html">
+            
+                <a href="6.4.provisioner与user_data.html">
+            
+                    
+                    provisioner与user_data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.后记.html">
+            
+                <a href="7.后记.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >依赖反转</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;">&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;</h1>
+<p>Terraform&#x7F16;&#x6392;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x5BF9;&#x8C61;&#x5F7C;&#x6B64;&#x4E4B;&#x95F4;&#x53EF;&#x80FD;&#x4E92;&#x76F8;&#x5B58;&#x5728;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x6709;&#x65F6;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x5199;&#x4E00;&#x4E9B;&#x65E8;&#x5728;&#x91CD;&#x7528;&#x7684;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x6A21;&#x5757;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x8D44;&#x6E90;&#x53EF;&#x80FD;&#x672C;&#x8EAB;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x6709;&#x5F85;&#x521B;&#x5EFA;&#x3002;</p>
+<p>&#x4E3E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x5B9A;&#x4E49;&#x4E86;&#x5728;UCloud&#x4E0A;&#x540C;&#x4E00;&#x4E2A;VPC&#x4E2D;&#x7684;&#x4E24;&#x53F0;&#x670D;&#x52A1;&#x5668;&#xFF1B;&#x7B2C;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x7F72;&#x4E86;&#x4E00;&#x4E2A;Web&#x5E94;&#x7528;&#xFF0C;&#x5B83;&#x88AB;&#x5206;&#x914D;&#x5728;&#x4E00;&#x4E2A;DMZ&#x5B50;&#x7F51;&#x91CC;&#xFF1B;&#x7B2C;&#x4E8C;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x90E8;&#x7F72;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5B83;&#x88AB;&#x5206;&#x914D;&#x5728;&#x4E00;&#x4E2A;&#x5185;&#x7F51;&#x5B50;&#x7F51;&#x91CC;&#x3002;&#x73B0;&#x5728;&#x7684;&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x5173;&#x4E8E;VPC&#x548C;&#x5B50;&#x7F51;&#x7684;&#x4EFB;&#x4F55;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x751A;&#x81F3;&#x8FDE;&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x90E8;&#x7F72;&#x5728;&#x54EA;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x90FD;&#x4E0D;&#x77E5;&#x9053;&#x3002;VPC&#x548C;&#x5B50;&#x7F51;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6709;&#x5F85;&#x521B;&#x5EFA;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">terraform</span> <span class="token punctuation">{</span>
+  <span class="token keyword">required_providers</span> <span class="token punctuation">{</span>
+    <span class="token property">ucloud</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">source</span>  <span class="token punctuation">=</span> <span class="token string">&quot;ucloud/ucloud&quot;</span>
+      <span class="token property">version</span> <span class="token punctuation">=</span> <span class="token string">&quot;~&gt;1.22.0&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">variable<span class="token type variable"> &quot;network_config&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span> <span class="token punctuation">=</span> object(<span class="token punctuation">{</span>
+    <span class="token property">vpc_id</span>         <span class="token punctuation">=</span> string
+    <span class="token property">web_app_config</span> <span class="token punctuation">=</span> object(<span class="token punctuation">{</span>
+      <span class="token property">az</span>        <span class="token punctuation">=</span> string
+      <span class="token property">subnet_id</span> <span class="token punctuation">=</span> string
+    <span class="token punctuation">}</span>)
+    <span class="token property">db_config</span>      <span class="token punctuation">=</span> object(<span class="token punctuation">{</span>
+      <span class="token property">az</span>        <span class="token punctuation">=</span> string
+      <span class="token property">subnet_id</span> <span class="token punctuation">=</span> string
+    <span class="token punctuation">}</span>)
+  <span class="token punctuation">}</span>)
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">data <span class="token type variable">&quot;ucloud_images&quot;</span></span> <span class="token string">&quot;web_app&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^WebApp&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">data <span class="token type variable">&quot;ucloud_images&quot;</span></span> <span class="token string">&quot;mysql&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^MySql 5.7&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_instance&quot;</span></span> <span class="token string">&quot;web_app&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> var.network_config.web_app_config.az
+  <span class="token property">image_id</span>          <span class="token punctuation">=</span> data.ucloud_images.web_app.images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">instance_type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;n-basic-2&quot;</span>
+  <span class="token property">vpc_id</span>            <span class="token punctuation">=</span> var.network_config.vpc_id
+  <span class="token property">subnet_id</span>         <span class="token punctuation">=</span> var.network_config.web_app_config.subnet_id
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_instance&quot;</span></span> <span class="token string">&quot;mysql&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> var.network_config.db_config.az
+  <span class="token property">image_id</span>          <span class="token punctuation">=</span> data.ucloud_images.mysql.images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">instance_type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;n-basic-2&quot;</span>
+  <span class="token property">vpc_id</span>            <span class="token punctuation">=</span> var.network_config.vpc_id
+  <span class="token property">subnet_id</span>         <span class="token punctuation">=</span> var.network_config.db_config.subnet_id
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x628A;&#x4F9D;&#x8D56;&#x7684;&#x7F51;&#x7EDC;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7C7B;&#x578B;&#xFF0C;&#x4E00;&#x4E2A;&#x5F3A;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7ED3;&#x6784;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x5C31;&#x4E0D;&#x7528;&#x518D;&#x5173;&#x6CE8;&#x7F51;&#x7EDC;&#x5C42;&#x7A76;&#x7ADF;&#x662F;&#x67E5;&#x8BE2;&#x800C;&#x6765;&#x7684;&#x8FD8;&#x662F;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x6A21;&#x5757;&#x4E2D;&#x53EA;&#x5B9A;&#x4E49;&#x4E86;&#x62BD;&#x8C61;&#x7684;&#x7F51;&#x7EDC;&#x5C42;&#x5B9A;&#x4E49;&#xFF0C;&#x5176;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x7531;&#x8C03;&#x7528;&#x8005;&#x4ECE;&#x5916;&#x90E8;&#x6CE8;&#x5165;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x4E86;&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8C03;&#x7528;&#x8005;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x7F51;&#x7EDC;&#x5C42;&#xFF0C;&#x90A3;&#x4E48;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x662F;&#x8FD9;&#x6837;&#x7684;(&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x628A;&#x524D;&#x9762;&#x7F16;&#x5199;&#x7684;&#x6A21;&#x5757;&#x4FDD;&#x5B58;&#x5728;<code>./machine</code>&#x76EE;&#x5F55;&#x4E0B;&#x800C;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5185;&#x5D4C;&#x6A21;&#x5757;)&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;ucloud_vpc&quot;</span></span> <span class="token string">&quot;vpc&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">cidr_blocks</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;192.168.0.0/16&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_subnet&quot;</span></span> <span class="token string">&quot;dmz&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">cidr_block</span> <span class="token punctuation">=</span> <span class="token string">&quot;192.168.0.0/24&quot;</span>
+  <span class="token property">vpc_id</span>     <span class="token punctuation">=</span> ucloud_vpc.vpc.id
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_subnet&quot;</span></span> <span class="token string">&quot;db&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">cidr_block</span> <span class="token punctuation">=</span> <span class="token string">&quot;192.168.1.0/24&quot;</span>
+  <span class="token property">vpc_id</span>     <span class="token punctuation">=</span> ucloud_vpc.vpc.id
+<span class="token punctuation">}</span>
+
+<span class="token keyword">module<span class="token type variable"> &quot;machine&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span>         <span class="token punctuation">=</span> <span class="token string">&quot;./machine&quot;</span>
+  <span class="token property">network_config</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+    <span class="token property">vpc_id</span>         <span class="token punctuation">=</span> ucloud_vpc.vpc.id
+    <span class="token property">web_app_config</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">az</span>        <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+      <span class="token property">subnet_id</span> <span class="token punctuation">=</span> ucloud_subnet.dmz.id
+    <span class="token punctuation">}</span>
+    <span class="token property">db_config</span>      <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">az</span>        <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+      <span class="token property">subnet_id</span> <span class="token punctuation">=</span> ucloud_subnet.db.id
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6216;&#x8005;&#x6211;&#x4EEC;&#x60F3;&#x4F7F;&#x7528;&#x73B0;&#x5B58;&#x7684;&#x7F51;&#x7EDC;&#x6765;&#x6258;&#x7BA1;&#x670D;&#x52A1;&#x5668;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">data <span class="token type variable">&quot;ucloud_vpcs&quot;</span></span> <span class="token string">&quot;vpc&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^AVeryImportantVpc&quot;</span>
+<span class="token punctuation">}</span>
+
+data <span class="token string">&quot;ucloud_subnets&quot;</span> <span class="token keyword">dmz_subnet</span> <span class="token punctuation">{</span>
+  <span class="token property">vpc_id</span>     <span class="token punctuation">=</span> data.ucloud_vpcs.vpc.vpcs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^DMZ&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">data <span class="token type variable">&quot;ucloud_subnets&quot;</span></span> <span class="token string">&quot;db_subnet&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">vpc_id</span>     <span class="token punctuation">=</span> data.ucloud_vpcs.vpc.vpcs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^DataBase&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">module<span class="token type variable"> &quot;machine&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span>         <span class="token punctuation">=</span> <span class="token string">&quot;./machine&quot;</span>
+  <span class="token property">network_config</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+    <span class="token property">vpc_id</span>         <span class="token punctuation">=</span> data.ucloud_vpcs.vpc.vpcs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+    <span class="token property">web_app_config</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">az</span>        <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+      <span class="token property">subnet_id</span> <span class="token punctuation">=</span> data.ucloud_subnets.dmz_subnet.subnets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+    <span class="token punctuation">}</span>
+    <span class="token property">db_config</span>      <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">az</span>        <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+      <span class="token property">subnet_id</span> <span class="token punctuation">=</span> data.ucloud_subnets.db_subnet.subnets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x4E2D;&#x5BF9;&#x7F51;&#x7EDC;&#x5C42;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x62BD;&#x8C61;&#x7684;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x5FC5;&#x987B;&#x662F;resource&#x6216;&#x662F;data&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x5F97;&#x6A21;&#x5757;&#x7684;&#x8C03;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x51B3;&#x5B9A;&#x5982;&#x4F55;&#x6784;&#x9020;&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;&#x5C42;&#xFF0C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x6CE8;&#x5165;&#x6A21;&#x5757;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.1.有条件创建.html" class="navigation navigation-prev " aria-label="Previous page: 有条件创建">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.3.多可用区分布.html" class="navigation navigation-next " aria-label="Next page: 多可用区分布">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"依赖反转","level":"1.7.2","depth":2,"next":{"title":"多可用区分布","level":"1.7.3","depth":2,"path":"6.3.多可用区分布.md","ref":"./6.3.多可用区分布.md","articles":[]},"previous":{"title":"有条件创建","level":"1.7.1","depth":2,"path":"6.1.有条件创建.md","ref":"./6.1.有条件创建.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","prism-themes","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"prism-themes":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6.2.依赖反转.md","mtime":"2020-12-06T06:03:59.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T06:22:05.454Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

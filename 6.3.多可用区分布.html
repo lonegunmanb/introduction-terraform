@@ -1,0 +1,1870 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>多可用区分布 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.4.provisioner与user_data.html" />
+    
+    
+    <link rel="prev" href="6.2.依赖反转.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Terraform初步体验.html">
+            
+                <a href="1.Terraform初步体验.html">
+            
+                    
+                    Terraform初步体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Terraform基础概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1.Terraform基础概念——Provider.html">
+            
+                <a href="2.1.Terraform基础概念——Provider.html">
+            
+                    
+                    Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2.Terraform基础概念——状态管理.html">
+            
+                <a href="2.2.Terraform基础概念——状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Terraform代码的书写.html">
+            
+                <a href="3.Terraform代码的书写.html">
+            
+                    
+                    Terraform代码的书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.类型.html">
+            
+                <a href="3.1.类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2.配置语法.html">
+            
+                <a href="3.2.配置语法.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.输入变量.html">
+            
+                <a href="3.3.输入变量.html">
+            
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4.输出值.html">
+            
+                <a href="3.4.输出值.html">
+            
+                    
+                    输出值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3.5.局部值.html">
+            
+                <a href="3.5.局部值.html">
+            
+                    
+                    局部值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6.资源.html">
+            
+                <a href="3.6.资源.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7.数据源.html">
+            
+                <a href="3.7.数据源.html">
+            
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8.表达式.html">
+            
+                <a href="3.8.表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9.重载文件.html">
+            
+                <a href="3.9.重载文件.html">
+            
+                    
+                    重载文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3.10.代码风格规范.html">
+            
+                <a href="3.10.代码风格规范.html">
+            
+                    
+                    代码风格规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Terraform模块.html">
+            
+                <a href="4.Terraform模块.html">
+            
+                    
+                    Terraform模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1.创建模块.html">
+            
+                <a href="4.1.创建模块.html">
+            
+                    
+                    创建模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2.使用模块.html">
+            
+                <a href="4.2.使用模块.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.Terraform命令行.html">
+            
+                <a href="5.Terraform命令行.html">
+            
+                    
+                    Terraform命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1.命令行配置文件.html">
+            
+                <a href="5.1.命令行配置文件.html">
+            
+                    
+                    命令行配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2.环境变量.html">
+            
+                <a href="5.2.环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3.资源地址.html">
+            
+                <a href="5.3.资源地址.html">
+            
+                    
+                    资源地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4.apply.html">
+            
+                <a href="5.4.apply.html">
+            
+                    
+                    apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5.console.html">
+            
+                <a href="5.5.console.html">
+            
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="5.6.destroy.html">
+            
+                <a href="5.6.destroy.html">
+            
+                    
+                    destroy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="5.7.fmt.html">
+            
+                <a href="5.7.fmt.html">
+            
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.8.force-unlock.html">
+            
+                <a href="5.8.force-unlock.html">
+            
+                    
+                    force-unlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="5.9.get.html">
+            
+                <a href="5.9.get.html">
+            
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="5.10.graph.html">
+            
+                <a href="5.10.graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="5.11.import.html">
+            
+                <a href="5.11.import.html">
+            
+                    
+                    import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="5.12.init.html">
+            
+                <a href="5.12.init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="5.13.output.html">
+            
+                <a href="5.13.output.html">
+            
+                    
+                    output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="5.14.plan.html">
+            
+                <a href="5.14.plan.html">
+            
+                    
+                    plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="5.15.providers.html">
+            
+                <a href="5.15.providers.html">
+            
+                    
+                    providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="5.16.refresh.html">
+            
+                <a href="5.16.refresh.html">
+            
+                    
+                    refresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="5.17.show.html">
+            
+                <a href="5.17.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="5.18.state.html">
+            
+                <a href="5.18.state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.18.1" data-path="5.18.1.list.html">
+            
+                <a href="5.18.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.2" data-path="5.18.2.mv.html">
+            
+                <a href="5.18.2.mv.html">
+            
+                    
+                    mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.3" data-path="5.18.3.pull.html">
+            
+                <a href="5.18.3.pull.html">
+            
+                    
+                    pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.4" data-path="5.18.4.push.html">
+            
+                <a href="5.18.4.push.html">
+            
+                    
+                    push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.5" data-path="5.18.5.replace-provider.html">
+            
+                <a href="5.18.5.replace-provider.html">
+            
+                    
+                    replace-provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.6" data-path="5.18.6.rm.html">
+            
+                <a href="5.18.6.rm.html">
+            
+                    
+                    rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.7" data-path="5.18.7.show.html">
+            
+                <a href="5.18.7.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="5.19.taint.html">
+            
+                <a href="5.19.taint.html">
+            
+                    
+                    taint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="5.20.validate.html">
+            
+                <a href="5.20.validate.html">
+            
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="5.21.untaint.html">
+            
+                <a href="5.21.untaint.html">
+            
+                    
+                    untaint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="5.22.workspace.html">
+            
+                <a href="5.22.workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.22.1" data-path="5.22.1.list.html">
+            
+                <a href="5.22.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.2" data-path="5.22.2.select.html">
+            
+                <a href="5.22.2.select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.3" data-path="5.22.3.new.html">
+            
+                <a href="5.22.3.new.html">
+            
+                    
+                    new
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.4" data-path="5.22.4.delete.html">
+            
+                <a href="5.22.4.delete.html">
+            
+                    
+                    delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.5" data-path="5.22.5.show.html">
+            
+                <a href="5.22.5.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path=".6.Aha.md">
+            
+                <span>
+            
+                    
+                    Aha
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1.有条件创建.html">
+            
+                <a href="6.1.有条件创建.html">
+            
+                    
+                    有条件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2.依赖反转.html">
+            
+                <a href="6.2.依赖反转.html">
+            
+                    
+                    依赖反转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="6.3.多可用区分布.html">
+            
+                <a href="6.3.多可用区分布.html">
+            
+                    
+                    多可用区分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6.4.provisioner与user_data.html">
+            
+                <a href="6.4.provisioner与user_data.html">
+            
+                    
+                    provisioner与user_data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.后记.html">
+            
+                <a href="7.后记.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >多可用区分布</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x591A;&#x53EF;&#x7528;&#x533A;&#x5206;&#x5E03;">&#x591A;&#x53EF;&#x7528;&#x533A;&#x5206;&#x5E03;</h1>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x76F8;&#x5F53;&#x5E38;&#x89C1;&#x7684;&#x5C0F;&#x6280;&#x5DE7;&#x3002;&#x591A;&#x6570;&#x516C;&#x6709;&#x4E91;&#x4E3A;&#x4E86;&#x9AD8;&#x53EF;&#x7528;&#x6027;&#xFF0C;&#x90FD;&#x5728;&#x5355;&#x4E00;&#x533A;&#x57DF;&#x5185;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x53EF;&#x7528;&#x533A;&#x7684;&#x8BBE;&#x8BA1;&#x3002;&#x4E00;&#x4E2A;&#x53EF;&#x533A;&#x662F;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#xFF0C;&#x5355;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x53EF;&#x80FD;&#x7531;&#x4E8E;&#x5404;&#x79CD;&#x81EA;&#x7136;&#x707E;&#x5BB3;&#x3001;&#x7F51;&#x7EDC;&#x6545;&#x969C;&#x800C;&#x5BFC;&#x81F4;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x516C;&#x6709;&#x4E91;&#x5E94;&#x7528;&#x90E8;&#x7F72;&#x9AD8;&#x53EF;&#x7528;&#x5E94;&#x7528;&#x5E94;&#x65F6;&#x523B;&#x8003;&#x8651;&#x8DE8;&#x53EF;&#x7528;&#x533A;&#x8BBE;&#x8BA1;&#x3002;</p>
+<p>&#x5047;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x521B;&#x5EFA;N&#x53F0;&#x4E0D;&#x540C;&#x7684;&#x4E91;&#x4E3B;&#x673A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5728;Terraform 0.12&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x7528;<code>count</code>&#x914D;&#x5408;&#x6A21;&#x8FD0;&#x7B97;&#x6765;&#x8FBE;&#x6210;&#x8FD9;&#x4E2A;&#x76EE;&#x7684;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">variable<span class="token type variable"> &quot;az&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span>    <span class="token punctuation">=</span> list(string)
+  <span class="token property">default</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;cn-bj2-03&quot;</span>,
+    <span class="token string">&quot;cn-bj2-04&quot;</span>,
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">variable<span class="token type variable"> &quot;instance_count&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span>    <span class="token punctuation">=</span> number
+  <span class="token property">default</span> <span class="token punctuation">=</span> <span class="token number">4</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">data <span class="token type variable">&quot;ucloud_images&quot;</span></span> <span class="token string">&quot;centos&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^CentOS 7&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_instance&quot;</span></span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">count</span>             <span class="token punctuation">=</span> var.instance_count
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> var.az<span class="token punctuation">[</span>count.index % length(var.az)<span class="token punctuation">]</span>
+  <span class="token property">image_id</span>          <span class="token punctuation">=</span> data.ucloud_images.centos.images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">instance_type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+  <span class="token property">charge_type</span>       <span class="token punctuation">=</span> <span class="token string">&quot;dynamic&quot;</span>
+  <span class="token property">name</span>              <span class="token punctuation">=</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token keyword">var</span><span class="token punctuation">.</span><span class="token type variable">az</span><span class="token punctuation">[</span><span class="token keyword">count</span><span class="token punctuation">.</span><span class="token type variable">index</span> <span class="token punctuation">%</span> <span class="token function">length</span><span class="token punctuation">(</span><span class="token keyword">var</span><span class="token punctuation">.</span><span class="token type variable">az</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>-<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token keyword">count</span><span class="token punctuation">.</span><span class="token type variable">index</span><span class="token punctuation">/</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token keyword">var</span><span class="token punctuation">.</span><span class="token type variable">az</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x5C31;&#x662F;&#x4F7F;&#x7528;<code>count</code>&#x521B;&#x5EFA;&#x591A;&#x5B9E;&#x4F8B;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x7528;<code>var.az[count.index % length(var.az)]</code>&#x53EF;&#x4EE5;&#x5FAA;&#x73AF;&#x4F7F;&#x7528;&#x6BCF;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#xFF0C;&#x4F7F;&#x5F97;&#x673A;&#x5668;&#x5C3D;&#x53EF;&#x80FD;&#x5747;&#x5300;&#x5206;&#x5E03;&#x5728;&#x5404;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x3002;</p>
+<pre class="language-"><code class="lang-bash">$ terraform apply -auto-approve
+data.ucloud_images.centos: Refreshing state<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>: Creation complete after 22s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-txa2owrp<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>: Creation complete after 24s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-v3qxdbju<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Creation complete after 26s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-td3x545p<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>30s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>40s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Creation complete after 43s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-scq1prqj<span class="token punctuation">]</span>
+
+Apply complete<span class="token operator">!</span> Resources: <span class="token number">4</span> added, <span class="token number">0</span> changed, <span class="token number">0</span> destroyed.
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x4E00;&#x4E0B;&#x521B;&#x5EFA;&#x7684;&#x4E3B;&#x673A;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform show
+<span class="token comment"># data.ucloud_images.centos:</span>
+data <span class="token string">&quot;ucloud_images&quot;</span> <span class="token string">&quot;centos&quot;</span> <span class="token punctuation">{</span>
+    <span class="token function">id</span>          <span class="token operator">=</span> <span class="token string">&quot;475496684&quot;</span>
+    ids         <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;uimage-22noyd&quot;</span>,
+        <span class="token string">&quot;uimage-3p0wg0&quot;</span>,
+        <span class="token string">&quot;uimage-4keil1&quot;</span>,
+        <span class="token string">&quot;uimage-aqvo5l&quot;</span>,
+        <span class="token string">&quot;uimage-f1chxn&quot;</span>,
+        <span class="token string">&quot;uimage-hq5elw&quot;</span>,
+        <span class="token string">&quot;uimage-rkn1v2&quot;</span>,
+    <span class="token punctuation">]</span>
+    images      <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2019-04-23T17:39:46+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-rkn1v2&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.0 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.0 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2019-04-16T21:05:03+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-f1chxn&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.2 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.2 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2019-09-09T11:40:31+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot; &quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-aqvo5l&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.4 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.4 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-05-07T17:40:42+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+                <span class="token string">&quot;CloudInit&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-hq5elw&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.6 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.6 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2019-04-16T21:05:05+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-3p0wg0&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.3 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.3 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2019-04-16T21:05:02+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-4keil1&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.1 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.1 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+        <span class="token punctuation">{</span>
+            availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-02&quot;</span>
+            create_time       <span class="token operator">=</span> <span class="token string">&quot;2019-04-16T21:04:53+08:00&quot;</span>
+            description       <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+            features          <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;NetEnhanced&quot;</span>,
+                <span class="token string">&quot;HotPlug&quot;</span>,
+            <span class="token punctuation">]</span>
+            <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uimage-22noyd&quot;</span>
+            name              <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.5 64&#x4F4D;&quot;</span>
+            os_name           <span class="token operator">=</span> <span class="token string">&quot;CentOS 7.5 64&#x4F4D;&quot;</span>
+            os_type           <span class="token operator">=</span> <span class="token string">&quot;linux&quot;</span>
+            size              <span class="token operator">=</span> <span class="token number">20</span>
+            status            <span class="token operator">=</span> <span class="token string">&quot;Available&quot;</span>
+            <span class="token builtin class-name">type</span>              <span class="token operator">=</span> <span class="token string">&quot;base&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    most_recent <span class="token operator">=</span> <span class="token boolean">false</span>
+    name_regex  <span class="token operator">=</span> <span class="token string">&quot;^CentOS 7&quot;</span>
+    total_count <span class="token operator">=</span> <span class="token number">7</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># ucloud_instance.web[1]:</span>
+resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+    auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span>
+    availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span>
+    boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span>
+    boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+    charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+    cpu               <span class="token operator">=</span> <span class="token number">1</span>
+    cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span>
+    create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:04+08:00&quot;</span>
+    disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;df06380a-00e1-42df-8c07-eec67d817f97&quot;</span>
+            is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+            size    <span class="token operator">=</span> <span class="token number">20</span>
+            <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:06+08:00&quot;</span>
+    <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-td3x545p&quot;</span>
+    image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span>
+    instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+    ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+            <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.44.37&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    memory            <span class="token operator">=</span> <span class="token number">4</span>
+    name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-0&quot;</span>
+    private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.44.37&quot;</span>
+    root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+    security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span>
+    status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span>
+    subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span>
+    tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+    vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># ucloud_instance.web[2]:</span>
+resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+    auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span>
+    availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+    boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span>
+    boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+    charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+    cpu               <span class="token operator">=</span> <span class="token number">1</span>
+    cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/IvyBridge&quot;</span>
+    create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:01+08:00&quot;</span>
+    disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;1d7f07c9-7342-431b-85bb-d3ee0022063d&quot;</span>
+            is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+            size    <span class="token operator">=</span> <span class="token number">20</span>
+            <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:02+08:00&quot;</span>
+    <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-txa2owrp&quot;</span>
+    image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-pxplaj&quot;</span>
+    instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+    ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+            <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.45.234&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    memory            <span class="token operator">=</span> <span class="token number">4</span>
+    name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03-1&quot;</span>
+    private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.45.234&quot;</span>
+    root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+    security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span>
+    status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span>
+    subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span>
+    tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+    vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># ucloud_instance.web[3]:</span>
+resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+    auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span>
+    availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span>
+    boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span>
+    boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+    charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+    cpu               <span class="token operator">=</span> <span class="token number">1</span>
+    cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span>
+    create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:04+08:00&quot;</span>
+    disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;31e2cad6-79a1-4475-a9f5-2c5c95605b18&quot;</span>
+            is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+            size    <span class="token operator">=</span> <span class="token number">20</span>
+            <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:04+08:00&quot;</span>
+    <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-v3qxdbju&quot;</span>
+    image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span>
+    instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+    ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+            <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.85.40&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    memory            <span class="token operator">=</span> <span class="token number">4</span>
+    name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-1&quot;</span>
+    private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.85.40&quot;</span>
+    root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+    security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span>
+    status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span>
+    subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span>
+    tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+    vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># ucloud_instance.web[0]:</span>
+resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+    auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span>
+    availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+    boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span>
+    boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+    charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+    cpu               <span class="token operator">=</span> <span class="token number">1</span>
+    cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/IvyBridge&quot;</span>
+    create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:04+08:00&quot;</span>
+    disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;da27595d-9645-4883-bf95-87b9076ab7e4&quot;</span>
+            is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+            size    <span class="token operator">=</span> <span class="token number">20</span>
+            <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:04+08:00&quot;</span>
+    <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-scq1prqj&quot;</span>
+    image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-pxplaj&quot;</span>
+    instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+    ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+            <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.107.152&quot;</span>
+        <span class="token punctuation">}</span>,
+    <span class="token punctuation">]</span>
+    memory            <span class="token operator">=</span> <span class="token number">4</span>
+    name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03-0&quot;</span>
+    private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.107.152&quot;</span>
+    root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+    security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span>
+    status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span>
+    subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span>
+    tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+    vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4E3B;&#x673A;&#x7684;&#x786E;&#x662F;&#x5747;&#x5300;&#x5730;&#x5206;&#x6563;&#x5728;&#x4E24;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x4E86;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x5728;&#x8C03;&#x6574;&#x53EF;&#x7528;&#x533A;&#x65F6;&#x4F1A;&#x53D1;&#x751F;&#x5927;&#x95EE;&#x9898;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">variable<span class="token type variable"> &quot;az&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span> <span class="token punctuation">=</span> list(string)
+  <span class="token property">default</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;cn-bj2-03&quot;</span>,
+<span class="token comment">#    &quot;cn-bj2-04&quot;,</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x7981;&#x7528;&#x4E86;&quot;cn-bj2-04&quot;&#x53EF;&#x7528;&#x533A;&#xFF0C;&#x6309;&#x9053;&#x7406;&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x7684;&#x53D8;&#x66F4;&#x8BA1;&#x5212;&#x5E94;&#x8BE5;&#x662F;&#x5C06;&#x4E24;&#x53F0;&#x539F;&#x672C;&#x5C5E;&#x4E8E;cn-bj2-04&#x7684;&#x4E3B;&#x673A;&#x5220;&#x9664;&#xFF0C;&#x5728;cn-bj2-03&#x53EF;&#x7528;&#x533A;&#x65B0;&#x589E;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform plan
+Refreshing Terraform state in-memory prior to plan<span class="token punctuation">..</span>.
+The refreshed state will be used to calculate this plan, but will not be
+persisted to <span class="token builtin class-name">local</span> or remote state storage.
+
+data.ucloud_images.centos: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span><span class="token number">475496684</span><span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-scq1prqj<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-v3qxdbju<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-txa2owrp<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-td3x545p<span class="token punctuation">]</span>
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  ~ update in-place
+-/+ destroy and <span class="token keyword">then</span> create replacement
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># ucloud_instance.web[1] must be replaced</span>
+-/+ resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      ~ auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03&quot;</span> <span class="token comment"># forces replacement</span>
+      ~ boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+      ~ cpu               <span class="token operator">=</span> <span class="token number">1</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:04+08:00&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;df06380a-00e1-42df-8c07-eec67d817f97&quot;</span>
+              - is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+              - size    <span class="token operator">=</span> <span class="token number">20</span>
+              - <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:06+08:00&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-td3x545p&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;uimage-rkn1v2&quot;</span>
+        instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+      ~ ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+              - <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.44.37&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + isolation_group   <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ memory            <span class="token operator">=</span> <span class="token number">4</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-0&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03-1&quot;</span>
+      ~ private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.44.37&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + remark            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      ~ security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+      ~ vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># ucloud_instance.web[2] will be updated in-place</span>
+  ~ resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+        auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span>
+        availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+        boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span>
+        boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+        charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+        cpu               <span class="token operator">=</span> <span class="token number">1</span>
+        cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/IvyBridge&quot;</span>
+        create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:01+08:00&quot;</span>
+        disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;1d7f07c9-7342-431b-85bb-d3ee0022063d&quot;</span>
+                is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+                size    <span class="token operator">=</span> <span class="token number">20</span>
+                <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span>
+        expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:02+08:00&quot;</span>
+        <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-txa2owrp&quot;</span>
+        image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-pxplaj&quot;</span>
+        instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+        ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+                <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.45.234&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span>
+        memory            <span class="token operator">=</span> <span class="token number">4</span>
+      ~ name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03-1&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03-2&quot;</span>
+        private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.45.234&quot;</span>
+        root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+        security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span>
+        status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span>
+        subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span>
+        tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+        vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># ucloud_instance.web[3] must be replaced</span>
+-/+ resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      ~ auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03&quot;</span> <span class="token comment"># forces replacement</span>
+      ~ boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+      ~ cpu               <span class="token operator">=</span> <span class="token number">1</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:04+08:00&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;31e2cad6-79a1-4475-a9f5-2c5c95605b18&quot;</span>
+              - is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+              - size    <span class="token operator">=</span> <span class="token number">20</span>
+              - <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:04+08:00&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-v3qxdbju&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;uimage-rkn1v2&quot;</span>
+        instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+      ~ ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+              - <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.85.40&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + isolation_group   <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ memory            <span class="token operator">=</span> <span class="token number">4</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-1&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03-3&quot;</span>
+      ~ private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.85.40&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + remark            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      ~ security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+      ~ vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+Plan: <span class="token number">2</span> to add, <span class="token number">1</span> to change, <span class="token number">2</span> to destroy.
+
+------------------------------------------------------------------------
+
+Note: You didn<span class="token string">&apos;t specify an &quot;-out&quot; parameter to save this plan, so Terraform
+can&apos;</span>t guarantee that exactly these actions will be performed <span class="token keyword">if</span>
+<span class="token string">&quot;terraform apply&quot;</span> is subsequently run.
+</code></pre>
+<p>&#x53D8;&#x66F4;&#x8BA1;&#x5212;&#x4E0E;&#x671F;&#x671B;&#x7565;&#x6709;&#x4E0D;&#x540C;&#x3002;&#x6211;&#x4EEC;&#x4ED4;&#x7EC6;&#x770B;&#x7EC6;&#x8282;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">  <span class="token comment"># ucloud_instance.web[2] will be updated in-place</span>
+  ~ resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+        auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span>
+        availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+        boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span>
+        boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+        charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+        cpu               <span class="token operator">=</span> <span class="token number">1</span>
+        cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/IvyBridge&quot;</span>
+        create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:01+08:00&quot;</span>
+        disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;1d7f07c9-7342-431b-85bb-d3ee0022063d&quot;</span>
+                is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+                size    <span class="token operator">=</span> <span class="token number">20</span>
+                <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span>
+        expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:02+08:00&quot;</span>
+        <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-txa2owrp&quot;</span>
+        image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-pxplaj&quot;</span>
+        instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+        ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+                <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.45.234&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span>
+        memory            <span class="token operator">=</span> <span class="token number">4</span>
+      ~ name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03-1&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03-2&quot;</span>
+        private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.45.234&quot;</span>
+        root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+        security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span>
+        status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span>
+        subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span>
+        tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+        vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x539F;&#x672C;&#x540D;&#x4E3A;&quot;cn-bj2-03-1&quot;&#x7684;&#x4E3B;&#x673A;&#x88AB;&#x66F4;&#x540D;&#x4E3A;&quot;&quot;cn-bj2-03-2&quot;&#x4E86;&#xFF0C;&#x539F;&#x672C;&#x5C5E;&#x4E8E;&quot;cn-bj2-04&quot;&#x7684;&#x7B2C;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x7684;&#x53D8;&#x66F4;&#x8BA1;&#x5212;&#x662F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">  <span class="token comment"># ucloud_instance.web[1] must be replaced</span>
+-/+ resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      ~ auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03&quot;</span> <span class="token comment"># forces replacement</span>
+      ~ boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+      ~ cpu               <span class="token operator">=</span> <span class="token number">1</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:09:04+08:00&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;df06380a-00e1-42df-8c07-eec67d817f97&quot;</span>
+              - is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+              - size    <span class="token operator">=</span> <span class="token number">20</span>
+              - <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-29T00:09:06+08:00&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-td3x545p&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;uimage-rkn1v2&quot;</span>
+        instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+      ~ ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+              - <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.44.37&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + isolation_group   <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ memory            <span class="token operator">=</span> <span class="token number">4</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-0&quot;</span> -<span class="token operator">&gt;</span> <span class="token string">&quot;cn-bj2-03-1&quot;</span>
+      ~ private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.44.37&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + remark            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      ~ security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      ~ subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+      ~ vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span> -<span class="token operator">&gt;</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5B83;&#x7684;&#x540D;&#x5B57;&#x4ECE;&quot;cn-bj2-04-0&quot;&#x53D8;&#x6210;&#x4E86;&quot;cn-bj2-03-1&quot;&#x3002;</p>
+<p>&#x4ED4;&#x7EC6;&#x60F3;&#x60F3;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x4F4E;&#x6548;&#x7684;&#x53D8;&#x66F4;&#x8BA1;&#x5212;&#x3002;&#x539F;&#x672C;&#x5C5E;&#x4E8E;cn-bj2-03&#x7684;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x5E94;&#x8BE5;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x53D8;&#x66F4;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5220;&#x9664;cn-bj2-04&#x7684;&#x4E3B;&#x673A;&#xFF0C;&#x518D;&#x8865;&#x5145;&#x4E24;&#x53F0;cn-bj2-03&#x7684;&#x4E3B;&#x673A;&#x5373;&#x53EF;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F;count&#xFF0C;&#x800C;count&#x53EA;&#x770B;&#x5143;&#x7D20;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5E8F;&#x53F7;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4F1A;&#x5F15;&#x8D77;&#x4E3B;&#x673A;&#x5E8F;&#x53F7;&#x7684;&#x91CD;&#x5927;&#x53D8;&#x5316;&#xFF0C;&#x5BFC;&#x81F4;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x4F4E;&#x6548;&#x7684;&#x53D8;&#x66F4;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x8BB2;count&#x4E0E;for_each&#x65F6;&#x5F3A;&#x8C03;&#x8FC7;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x521B;&#x5EFA;&#x7684;&#x8D44;&#x6E90;&#x5B9E;&#x4F8B;&#x5F7C;&#x6B64;&#x4E4B;&#x95F4;&#x51E0;&#x4E4E;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF0C;&#x90A3;&#x4E48;count&#x6BD4;&#x8F83;&#x5408;&#x9002;&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;for_each&#x4F1A;&#x66F4;&#x52A0;&#x5B89;&#x5168;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;for_each&#x6539;&#x5199;&#x8FD9;&#x6BB5;&#x903B;&#x8F91;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">variable<span class="token type variable"> &quot;az&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span>    <span class="token punctuation">=</span> list(string)
+  <span class="token property">default</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;cn-bj2-03&quot;</span>,
+    <span class="token string">&quot;cn-bj2-04&quot;</span>,
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">variable<span class="token type variable"> &quot;instance_count&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span>    <span class="token punctuation">=</span> number
+  <span class="token property">default</span> <span class="token punctuation">=</span> <span class="token number">4</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">locals</span> <span class="token punctuation">{</span>
+  <span class="token property">instance_names</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>for i in range(var.instance_count):<span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token keyword">var</span><span class="token punctuation">.</span><span class="token type variable">az</span><span class="token punctuation">[</span>i<span class="token punctuation">%</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token keyword">var</span><span class="token punctuation">.</span><span class="token type variable">az</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>-<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token function">floor</span><span class="token punctuation">(</span>i<span class="token punctuation">/</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token keyword">var</span><span class="token punctuation">.</span><span class="token type variable">az</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">data <span class="token type variable">&quot;ucloud_images&quot;</span></span> <span class="token string">&quot;centos&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^CentOS 7&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_instance&quot;</span></span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">for_each</span>          <span class="token punctuation">=</span> toset(local.instance_names)
+  <span class="token property">name</span>              <span class="token punctuation">=</span> each.value
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> var.az<span class="token punctuation">[</span>index(local.instance_names, each.value) % length(var.az)<span class="token punctuation">]</span>
+  <span class="token property">image_id</span>          <span class="token punctuation">=</span> data.ucloud_images.centos.images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">instance_type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+  <span class="token property">charge_type</span>       <span class="token punctuation">=</span> <span class="token string">&quot;dynamic&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E3A;&#x4E86;&#x751F;&#x6210;&#x4E3B;&#x673A;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x7528;<code>range</code>&#x51FD;&#x6570;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x5E8F;&#x53F7;&#x96C6;&#x5408;&#xFF0C;&#x6BD4;&#x5982;&#x76EE;&#x6807;&#x4E3B;&#x673A;&#x6570;&#x662F;<code>4</code>&#xFF0C;&#x90A3;&#x4E48;<code>range(4)</code>&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;<code>[0, 1, 2, 3]</code>&#xFF1B;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x53D6;&#x6A21;&#x8FD0;&#x7B97;&#x4F7F;&#x5F97;&#x540D;&#x5B57;&#x524D;&#x7F00;&#x5728;&#x53EF;&#x7528;&#x533A;&#x5217;&#x8868;&#x4E4B;&#x95F4;&#x5FAA;&#x73AF;&#x9012;&#x589E;&#xFF0C;&#x6700;&#x540E;&#x7528;<code>floor(i/length(var.az))</code>&#x8BA1;&#x7B97;&#x51FA;&#x5F53;&#x524D;&#x5E8F;&#x53F7;&#x5BF9;&#x5E94;&#x5728;&#x5F53;&#x524D;&#x53EF;&#x7528;&#x533A;&#x662F;&#x7B2C;&#x51E0;&#x53F0;&#x3002;&#x4F8B;&#x5982;4&#x53F7;&#x4E3B;&#x673A;&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x5C31;&#x662F;&#x7B2C;&#x4E8C;&#x53F0;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x540D;&#x5B57;&#x5E94;&#x8BE5;&#x5C31;&#x662F;<code>cn-bj-04-1</code>&#x3002;</p>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x662F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform apply -auto-approve
+data.ucloud_images.centos: Refreshing state<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-1&quot;</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-0&quot;</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-1&quot;</span><span class="token punctuation">]</span>: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-1&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-0&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-1&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-1&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-0&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-1&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-1&quot;</span><span class="token punctuation">]</span>: Creation complete after 21s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-fjci1i4o<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-0&quot;</span><span class="token punctuation">]</span>: Creation complete after 23s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-bkkhmref<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-1&quot;</span><span class="token punctuation">]</span>: Creation complete after 26s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-amosgdaa<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>30s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>40s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Creation complete after 45s <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-kltudgnf<span class="token punctuation">]</span>
+
+Apply complete<span class="token operator">!</span> Resources: <span class="token number">4</span> added, <span class="token number">0</span> changed, <span class="token number">0</span> destroyed.
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x53BB;&#x6389;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">variable<span class="token type variable"> &quot;az&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">type</span> <span class="token punctuation">=</span> list(string)
+  <span class="token property">default</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;cn-bj2-03&quot;</span>,
+<span class="token comment">#    &quot;cn-bj2-04&quot;,</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x6267;&#x884C;&#x8BA1;&#x5212;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform plan
+Refreshing Terraform state in-memory prior to plan<span class="token punctuation">..</span>.
+The refreshed state will be used to calculate this plan, but will not be
+persisted to <span class="token builtin class-name">local</span> or remote state storage.
+
+data.ucloud_images.centos: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span><span class="token number">475496684</span><span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-1&quot;</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-amosgdaa<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-0&quot;</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-bkkhmref<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-03-0&quot;</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-kltudgnf<span class="token punctuation">]</span>
+ucloud_instance.web<span class="token punctuation">[</span><span class="token string">&quot;cn-bj2-04-1&quot;</span><span class="token punctuation">]</span>: Refreshing state<span class="token punctuation">..</span>. <span class="token punctuation">[</span>id<span class="token operator">=</span>uhost-fjci1i4o<span class="token punctuation">]</span>
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+  - destroy
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># ucloud_instance.web[&quot;cn-bj2-03-2&quot;] will be created</span>
+  + resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      + auto_renew        <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+      + boot_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + boot_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+      + cpu               <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + cpu_platform      <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + create_time       <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + disk_set          <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + expire_time       <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + <span class="token function">id</span>                <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-rkn1v2&quot;</span>
+      + instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+      + ip_set            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + isolation_group   <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + memory            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03-2&quot;</span>
+      + private_ip        <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + remark            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      + security_group    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + status            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + subnet_id         <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+      + vpc_id            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># ucloud_instance.web[&quot;cn-bj2-03-3&quot;] will be created</span>
+  + resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      + auto_renew        <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+      + boot_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + boot_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span>
+      + cpu               <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + cpu_platform      <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + create_time       <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_size    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + data_disk_type    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + disk_set          <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + expire_time       <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + <span class="token function">id</span>                <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-rkn1v2&quot;</span>
+      + instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+      + ip_set            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + isolation_group   <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + memory            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-03-3&quot;</span>
+      + private_ip        <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + remark            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      + security_group    <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + status            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + subnet_id         <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      + tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span>
+      + vpc_id            <span class="token operator">=</span> <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># ucloud_instance.web[&quot;cn-bj2-04-0&quot;] will be destroyed</span>
+  - resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      - auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span> -<span class="token operator">&gt;</span> null
+      - availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span> -<span class="token operator">&gt;</span> null
+      - boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span> -<span class="token operator">&gt;</span> null
+      - boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span> -<span class="token operator">&gt;</span> null
+      - charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span> -<span class="token operator">&gt;</span> null
+      - cpu               <span class="token operator">=</span> <span class="token number">1</span> -<span class="token operator">&gt;</span> null
+      - cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span> -<span class="token operator">&gt;</span> null
+      - create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T22:35:53+08:00&quot;</span> -<span class="token operator">&gt;</span> null
+      - disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;b214d840-ffec-4958-a3da-3580846fd2a3&quot;</span>
+              - is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+              - size    <span class="token operator">=</span> <span class="token number">20</span>
+              - <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> null
+      - expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:35:53+08:00&quot;</span> -<span class="token operator">&gt;</span> null
+      - <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-bkkhmref&quot;</span> -<span class="token operator">&gt;</span> null
+      - image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span> -<span class="token operator">&gt;</span> null
+      - instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span> -<span class="token operator">&gt;</span> null
+      - ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+              - <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.48.82&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> null
+      - memory            <span class="token operator">=</span> <span class="token number">4</span> -<span class="token operator">&gt;</span> null
+      - name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-0&quot;</span> -<span class="token operator">&gt;</span> null
+      - private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.48.82&quot;</span> -<span class="token operator">&gt;</span> null
+      - root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      - security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span> -<span class="token operator">&gt;</span> null
+      - status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span> -<span class="token operator">&gt;</span> null
+      - subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span> -<span class="token operator">&gt;</span> null
+      - tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span> -<span class="token operator">&gt;</span> null
+      - vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span> -<span class="token operator">&gt;</span> null
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># ucloud_instance.web[&quot;cn-bj2-04-1&quot;] will be destroyed</span>
+  - resource <span class="token string">&quot;ucloud_instance&quot;</span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+      - auto_renew        <span class="token operator">=</span> <span class="token boolean">true</span> -<span class="token operator">&gt;</span> null
+      - availability_zone <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04&quot;</span> -<span class="token operator">&gt;</span> null
+      - boot_disk_size    <span class="token operator">=</span> <span class="token number">20</span> -<span class="token operator">&gt;</span> null
+      - boot_disk_type    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span> -<span class="token operator">&gt;</span> null
+      - charge_type       <span class="token operator">=</span> <span class="token string">&quot;dynamic&quot;</span> -<span class="token operator">&gt;</span> null
+      - cpu               <span class="token operator">=</span> <span class="token number">1</span> -<span class="token operator">&gt;</span> null
+      - cpu_platform      <span class="token operator">=</span> <span class="token string">&quot;Intel/Broadwell&quot;</span> -<span class="token operator">&gt;</span> null
+      - create_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T22:35:53+08:00&quot;</span> -<span class="token operator">&gt;</span> null
+      - disk_set          <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - <span class="token function">id</span>      <span class="token operator">=</span> <span class="token string">&quot;6a3f274f-e072-4a46-90f8-edc7dbaa27f7&quot;</span>
+              - is_boot <span class="token operator">=</span> <span class="token boolean">true</span>
+              - size    <span class="token operator">=</span> <span class="token number">20</span>
+              - <span class="token builtin class-name">type</span>    <span class="token operator">=</span> <span class="token string">&quot;local_normal&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> null
+      - expire_time       <span class="token operator">=</span> <span class="token string">&quot;2020-11-28T23:35:53+08:00&quot;</span> -<span class="token operator">&gt;</span> null
+      - <span class="token function">id</span>                <span class="token operator">=</span> <span class="token string">&quot;uhost-fjci1i4o&quot;</span> -<span class="token operator">&gt;</span> null
+      - image_id          <span class="token operator">=</span> <span class="token string">&quot;uimage-dhe5m2&quot;</span> -<span class="token operator">&gt;</span> null
+      - instance_type     <span class="token operator">=</span> <span class="token string">&quot;n-standard-1&quot;</span> -<span class="token operator">&gt;</span> null
+      - ip_set            <span class="token operator">=</span> <span class="token punctuation">[</span>
+          - <span class="token punctuation">{</span>
+              - internet_type <span class="token operator">=</span> <span class="token string">&quot;Private&quot;</span>
+              - <span class="token function">ip</span>            <span class="token operator">=</span> <span class="token string">&quot;10.9.176.28&quot;</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span> -<span class="token operator">&gt;</span> null
+      - memory            <span class="token operator">=</span> <span class="token number">4</span> -<span class="token operator">&gt;</span> null
+      - name              <span class="token operator">=</span> <span class="token string">&quot;cn-bj2-04-1&quot;</span> -<span class="token operator">&gt;</span> null
+      - private_ip        <span class="token operator">=</span> <span class="token string">&quot;10.9.176.28&quot;</span> -<span class="token operator">&gt;</span> null
+      - root_password     <span class="token operator">=</span> <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      - security_group    <span class="token operator">=</span> <span class="token string">&quot;firewall-juhsrlvr&quot;</span> -<span class="token operator">&gt;</span> null
+      - status            <span class="token operator">=</span> <span class="token string">&quot;Running&quot;</span> -<span class="token operator">&gt;</span> null
+      - subnet_id         <span class="token operator">=</span> <span class="token string">&quot;subnet-dtu3dgpr&quot;</span> -<span class="token operator">&gt;</span> null
+      - tag               <span class="token operator">=</span> <span class="token string">&quot;Default&quot;</span> -<span class="token operator">&gt;</span> null
+      - vpc_id            <span class="token operator">=</span> <span class="token string">&quot;uvnet-f1c3jq2b&quot;</span> -<span class="token operator">&gt;</span> null
+    <span class="token punctuation">}</span>
+
+Plan: <span class="token number">2</span> to add, <span class="token number">0</span> to change, <span class="token number">2</span> to destroy.
+
+------------------------------------------------------------------------
+
+Note: You didn<span class="token string">&apos;t specify an &quot;-out&quot; parameter to save this plan, so Terraform
+can&apos;</span>t guarantee that exactly these actions will be performed <span class="token keyword">if</span>
+<span class="token string">&quot;terraform apply&quot;</span> is subsequently run.
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x539F;&#x6765;&#x5C5E;&#x4E8E;<code>cn-bj2-03</code>&#x7684;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x539F;&#x5C01;&#x4E0D;&#x52A8;&#xFF0C;&#x5220;&#x9664;&#x4E86;&#x5C5E;&#x4E8E;<code>cn-bj2-04</code>&#x7684;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#xFF0C;&#x5E76;&#x4E14;&#x5728;<code>cn-bj2-03</code>&#x53EF;&#x7528;&#x533A;&#x65B0;&#x589E;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.2.依赖反转.html" class="navigation navigation-prev " aria-label="Previous page: 依赖反转">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.4.provisioner与user_data.html" class="navigation navigation-next " aria-label="Next page: provisioner与user_data">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"多可用区分布","level":"1.7.3","depth":2,"next":{"title":"provisioner与user_data","level":"1.7.4","depth":2,"path":"6.4.provisioner与user_data.md","ref":"./6.4.provisioner与user_data.md","articles":[]},"previous":{"title":"依赖反转","level":"1.7.2","depth":2,"path":"6.2.依赖反转.md","ref":"./6.2.依赖反转.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","prism-themes","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"prism-themes":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6.3.多可用区分布.md","mtime":"2020-12-06T06:05:19.565Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T06:22:05.454Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

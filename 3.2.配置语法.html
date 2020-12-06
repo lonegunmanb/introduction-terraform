@@ -1,0 +1,1077 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>配置语法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.3.输入变量.html" />
+    
+    
+    <link rel="prev" href="3.1.类型.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Terraform初步体验.html">
+            
+                <a href="1.Terraform初步体验.html">
+            
+                    
+                    Terraform初步体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Terraform基础概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1.Terraform基础概念——Provider.html">
+            
+                <a href="2.1.Terraform基础概念——Provider.html">
+            
+                    
+                    Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2.Terraform基础概念——状态管理.html">
+            
+                <a href="2.2.Terraform基础概念——状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Terraform代码的书写.html">
+            
+                <a href="3.Terraform代码的书写.html">
+            
+                    
+                    Terraform代码的书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.类型.html">
+            
+                <a href="3.1.类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="3.2.配置语法.html">
+            
+                <a href="3.2.配置语法.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.输入变量.html">
+            
+                <a href="3.3.输入变量.html">
+            
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4.输出值.html">
+            
+                <a href="3.4.输出值.html">
+            
+                    
+                    输出值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3.5.局部值.html">
+            
+                <a href="3.5.局部值.html">
+            
+                    
+                    局部值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6.资源.html">
+            
+                <a href="3.6.资源.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7.数据源.html">
+            
+                <a href="3.7.数据源.html">
+            
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8.表达式.html">
+            
+                <a href="3.8.表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9.重载文件.html">
+            
+                <a href="3.9.重载文件.html">
+            
+                    
+                    重载文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3.10.代码风格规范.html">
+            
+                <a href="3.10.代码风格规范.html">
+            
+                    
+                    代码风格规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Terraform模块.html">
+            
+                <a href="4.Terraform模块.html">
+            
+                    
+                    Terraform模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1.创建模块.html">
+            
+                <a href="4.1.创建模块.html">
+            
+                    
+                    创建模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2.使用模块.html">
+            
+                <a href="4.2.使用模块.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.Terraform命令行.html">
+            
+                <a href="5.Terraform命令行.html">
+            
+                    
+                    Terraform命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1.命令行配置文件.html">
+            
+                <a href="5.1.命令行配置文件.html">
+            
+                    
+                    命令行配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2.环境变量.html">
+            
+                <a href="5.2.环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3.资源地址.html">
+            
+                <a href="5.3.资源地址.html">
+            
+                    
+                    资源地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4.apply.html">
+            
+                <a href="5.4.apply.html">
+            
+                    
+                    apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5.console.html">
+            
+                <a href="5.5.console.html">
+            
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="5.6.destroy.html">
+            
+                <a href="5.6.destroy.html">
+            
+                    
+                    destroy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="5.7.fmt.html">
+            
+                <a href="5.7.fmt.html">
+            
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.8.force-unlock.html">
+            
+                <a href="5.8.force-unlock.html">
+            
+                    
+                    force-unlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="5.9.get.html">
+            
+                <a href="5.9.get.html">
+            
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="5.10.graph.html">
+            
+                <a href="5.10.graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="5.11.import.html">
+            
+                <a href="5.11.import.html">
+            
+                    
+                    import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="5.12.init.html">
+            
+                <a href="5.12.init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="5.13.output.html">
+            
+                <a href="5.13.output.html">
+            
+                    
+                    output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="5.14.plan.html">
+            
+                <a href="5.14.plan.html">
+            
+                    
+                    plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="5.15.providers.html">
+            
+                <a href="5.15.providers.html">
+            
+                    
+                    providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="5.16.refresh.html">
+            
+                <a href="5.16.refresh.html">
+            
+                    
+                    refresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="5.17.show.html">
+            
+                <a href="5.17.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="5.18.state.html">
+            
+                <a href="5.18.state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.18.1" data-path="5.18.1.list.html">
+            
+                <a href="5.18.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.2" data-path="5.18.2.mv.html">
+            
+                <a href="5.18.2.mv.html">
+            
+                    
+                    mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.3" data-path="5.18.3.pull.html">
+            
+                <a href="5.18.3.pull.html">
+            
+                    
+                    pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.4" data-path="5.18.4.push.html">
+            
+                <a href="5.18.4.push.html">
+            
+                    
+                    push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.5" data-path="5.18.5.replace-provider.html">
+            
+                <a href="5.18.5.replace-provider.html">
+            
+                    
+                    replace-provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.6" data-path="5.18.6.rm.html">
+            
+                <a href="5.18.6.rm.html">
+            
+                    
+                    rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.7" data-path="5.18.7.show.html">
+            
+                <a href="5.18.7.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="5.19.taint.html">
+            
+                <a href="5.19.taint.html">
+            
+                    
+                    taint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="5.20.validate.html">
+            
+                <a href="5.20.validate.html">
+            
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="5.21.untaint.html">
+            
+                <a href="5.21.untaint.html">
+            
+                    
+                    untaint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="5.22.workspace.html">
+            
+                <a href="5.22.workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.22.1" data-path="5.22.1.list.html">
+            
+                <a href="5.22.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.2" data-path="5.22.2.select.html">
+            
+                <a href="5.22.2.select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.3" data-path="5.22.3.new.html">
+            
+                <a href="5.22.3.new.html">
+            
+                    
+                    new
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.4" data-path="5.22.4.delete.html">
+            
+                <a href="5.22.4.delete.html">
+            
+                    
+                    delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.5" data-path="5.22.5.show.html">
+            
+                <a href="5.22.5.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path=".6.Aha.md">
+            
+                <span>
+            
+                    
+                    Aha
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1.有条件创建.html">
+            
+                <a href="6.1.有条件创建.html">
+            
+                    
+                    有条件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2.依赖反转.html">
+            
+                <a href="6.2.依赖反转.html">
+            
+                    
+                    依赖反转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3.多可用区分布.html">
+            
+                <a href="6.3.多可用区分布.html">
+            
+                    
+                    多可用区分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6.4.provisioner与user_data.html">
+            
+                <a href="6.4.provisioner与user_data.html">
+            
+                    
+                    provisioner与user_data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.后记.html">
+            
+                <a href="7.后记.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >配置语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x914D;&#x7F6E;&#x8BED;&#x6CD5;">&#x914D;&#x7F6E;&#x8BED;&#x6CD5;</h1>
+<p>&#x8FD9;&#x91CC;&#x8BB2;&#x7684;&#x4ECD;&#x7136;&#x662F;HCL&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x53EA;&#x8BB2;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x8BED;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x8BFB;&#x8005;&#x6709;&#x5174;&#x8DA3;&#x4E86;&#x89E3;&#x5B8C;&#x6574;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;<a href="https://github.com/hashicorp/hcl/blob/hcl2/hclsyntax/spec.md" target="_blank">HCL&#x8BED;&#x6CD5;&#x89C4;&#x7EA6;</a></p>
+<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
+<p>&#x53C2;&#x6570;&#x8D4B;&#x503C;&#x5C31;&#x662F;&#x5C06;&#x4E00;&#x4E2A;&#x503C;&#x8D4B;&#x7ED9;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x540D;&#x79F0;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token property">image_id</span> <span class="token punctuation">=</span> <span class="token string">&quot;abc123&quot;</span>
+</code></pre>
+<p>&#x7B49;&#x53F7;&#x524D;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x5C31;&#x662F;&#x53C2;&#x6570;&#x540D;&#xFF0C;&#x7B49;&#x53F7;&#x540E;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F;&#x53C2;&#x6570;&#x503C;&#x3002;&#x53C2;&#x6570;&#x8D4B;&#x503C;&#x65F6;Terraform&#x4F1A;&#x68C0;&#x67E5;&#x7C7B;&#x578B;&#x662F;&#x5426;&#x5339;&#x914D;&#x3002;&#x53C2;&#x6570;&#x540D;&#x662F;&#x786E;&#x5B9A;&#x7684;&#xFF0C;&#x53C2;&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x786E;&#x5B9A;&#x7684;&#x5B57;&#x9762;&#x91CF;&#x786C;&#x7F16;&#x7801;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x7EC4;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x7528;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x7684;&#x503C;&#x52A0;&#x4EE5;&#x8BA1;&#x7B97;&#x5F97;&#x51FA;&#x7ED3;&#x679C;&#x503C;&#x3002;</p>
+<h2 id="&#x5757;">&#x5757;</h2>
+<p>&#x4E00;&#x4E2A;&#x5757;&#x662F;&#x5305;&#x542B;&#x4E00;&#x7EC4;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;aws_instance&quot;</span></span> <span class="token string">&quot;example&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">ami</span> <span class="token punctuation">=</span> <span class="token string">&quot;abc123&quot;</span>
+
+  <span class="token keyword">network_interface</span> <span class="token punctuation">{</span>
+    <span class="token comment"># ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E00;&#x4E2A;&#x5757;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;(&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#x7C7B;&#x578B;&#x5C31;&#x662F;resource)&#x3002;&#x6BCF;&#x4E2A;&#x5757;&#x7C7B;&#x578B;&#x90FD;&#x5B9A;&#x4E49;&#x4E86;&#x7C7B;&#x578B;&#x5173;&#x952E;&#x5B57;&#x540E;&#x9762;&#x8981;&#x8DDF;&#x591A;&#x5C11;&#x6807;&#x7B7E;&#xFF0C;&#x4F8B;&#x5982;resource&#x5757;&#x89C4;&#x5B9A;&#x4E86;&#x540E;&#x9762;&#x8981;&#x8DDF;&#x4E24;&#x4E2A;&#x6807;&#x7B7E;&#x2014;&#x2014;&#x5728;&#x4F8B;&#x5B50;&#x91CC;&#x5C31;&#x662F;<code>aws_instance</code>&#x548C;<code>example</code>&#x3002;&#x4E00;&#x4E2A;&#x5757;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x89C4;&#x5B9A;&#x4EFB;&#x610F;&#x591A;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6CA1;&#x6709;&#x6807;&#x7B7E;&#xFF0C;&#x6BD4;&#x5982;&#x5185;&#x5D4C;&#x7684;<code>network_interface</code>&#x5757;&#x3002;</p>
+<p>&#x5728;&#x5757;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x540E;&#x7EED;&#x6807;&#x7B7E;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x662F;&#x5757;&#x4F53;&#x3002;&#x5757;&#x4F53;&#x5FC5;&#x987B;&#x88AB;&#x5305;&#x542B;&#x5728;&#x4E00;&#x5BF9;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x95F4;&#x3002;&#x5728;&#x5757;&#x4F53;&#x4E2D;&#x53EF;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x5B9A;&#x4E49;&#x5404;&#x79CD;&#x53C2;&#x6570;&#x548C;&#x5176;&#x4ED6;&#x7684;&#x5757;&#x3002;</p>
+<p>Terraform&#x89C4;&#x8303;&#x5B9A;&#x4E49;&#x4E86;&#x6709;&#x9650;&#x591A;&#x4E2A;&#x9876;&#x7EA7;&#x5757;&#x7C7B;&#x578B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x6E38;&#x79BB;&#x4E8E;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5757;&#x72EC;&#x7ACB;&#x5B9A;&#x4E49;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5757;&#x3002;&#x5927;&#x90E8;&#x5206;&#x7684;Terraform&#x529F;&#x80FD;(&#x4F8B;&#x5982;resource, variable, output, data&#x7B49;)&#x90FD;&#x662F;&#x9876;&#x7EA7;&#x5757;&#x3002;</p>
+<h2 id="&#x6807;&#x8BC6;&#x7B26;">&#x6807;&#x8BC6;&#x7B26;</h2>
+<p>&#x53C2;&#x6570;&#x540D;&#x3001;&#x5757;&#x7C7B;&#x578B;&#x540D;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;Terraform&#x89C4;&#x8303;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x7ED3;&#x6784;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982;resource&#x3001;variable&#x7B49;&#xFF0C;&#x90FD;&#x662F;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<p>&#x5408;&#x6CD5;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;(_)&#x4EE5;&#x53CA;&#x51CF;&#x53F7;(-)&#x3002;&#x6807;&#x8BC6;&#x7B26;&#x9996;&#x5B57;&#x6BCD;&#x4E0D;&#x53EF;&#x4EE5;&#x4E3A;&#x6570;&#x5B57;&#x3002;</p>
+<p>&#x8981;&#x4E86;&#x89E3;&#x5B8C;&#x6574;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x89C4;&#x8303;&#xFF0C;&#x8BF7;&#x8BBF;&#x95EE;<a href="http://unicode.org/reports/tr31/" target="_blank">Unicode&#x6807;&#x8BC6;&#x7B26;&#x8BED;&#x6CD5;</a>&#x3002;</p>
+<h2 id="&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</h2>
+<p>Terraform&#x652F;&#x6301;&#x4E09;&#x79CD;&#x6CE8;&#x91CA;&#xFF1A;</p>
+<ul>
+<li><code>#</code> &#x5355;&#x884C;&#x6CE8;&#x91CA;&#xFF0C;&#x5176;&#x540E;&#x7684;&#x5185;&#x5BB9;&#x4E3A;&#x6CE8;&#x91CA;</li>
+<li><code>//</code> &#x5355;&#x884C;&#x6CE8;&#x91CA;&#xFF0C;&#x5176;&#x540E;&#x7684;&#x5185;&#x5BB9;&#x4E3A;&#x6CE8;&#x91CA;</li>
+<li><code>/*</code> &#x548C; <code>*/</code>&#xFF0C;&#x591A;&#x884C;&#x6CE8;&#x91CA;&#xFF0C;&#x53EF;&#x4EE5;&#x6CE8;&#x91CA;&#x591A;&#x884C;</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5355;&#x884C;&#x6CE8;&#x91CA;&#x4F18;&#x5148;&#x4F7F;&#x7528;#&#x3002;&#x81EA;&#x52A8;&#x5316;&#x683C;&#x5F0F;&#x6574;&#x7406;&#x5DE5;&#x5177;&#x4F1A;&#x81EA;&#x52A8;&#x628A;//&#x66FF;&#x6362;&#x6210;#&#x3002;</p>
+<h2 id="&#x7F16;&#x7801;&#x4EE5;&#x53CA;&#x6362;&#x884C;">&#x7F16;&#x7801;&#x4EE5;&#x53CA;&#x6362;&#x884C;</h2>
+<p>Terraform&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x59CB;&#x7EC8;&#x4F7F;&#x7528;UTF-8&#x7F16;&#x7801;&#x3002;&#x5206;&#x9694;&#x7B26;&#x5FC5;&#x987B;&#x4F7F;&#x7528;ASCII&#x7B26;&#x53F7;&#xFF0C;&#x5176;&#x4ED6;&#x6807;&#x8BC6;&#x7B26;&#x3001;&#x6CE8;&#x91CA;&#x4EE5;&#x53CA;&#x5B57;&#x7B26;&#x4E32;&#x5B57;&#x9762;&#x91CF;&#x5747;&#x53EF;&#x4F7F;&#x7528;&#x975E;ASCII&#x5B57;&#x7B26;&#x3002;</p>
+<p>Terraform&#x517C;&#x5BB9;Unix&#x98CE;&#x683C;&#x7684;&#x6362;&#x884C;&#x7B26;&#x4EE5;&#x53CA;Windows&#x98CE;&#x683C;&#x7684;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x4F46;&#x662F;&#x7406;&#x60F3;&#x72B6;&#x6001;&#x4E0B;&#x5E94;&#x4F7F;&#x7528;Unix&#x98CE;&#x683C;&#x6362;&#x884C;&#x7B26;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.1.类型.html" class="navigation navigation-prev " aria-label="Previous page: 类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.3.输入变量.html" class="navigation navigation-next " aria-label="Next page: 输入变量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"配置语法","level":"1.4.2","depth":2,"next":{"title":"输入变量","level":"1.4.3","depth":2,"path":"3.3.输入变量.md","ref":"./3.3.输入变量.md","articles":[]},"previous":{"title":"类型","level":"1.4.1","depth":2,"path":"3.1.类型.md","ref":"./3.1.类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","prism-themes","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"prism-themes":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.2.配置语法.md","mtime":"2020-12-06T06:03:59.668Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T06:22:05.454Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

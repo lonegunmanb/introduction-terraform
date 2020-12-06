@@ -1,0 +1,1101 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Terraform命令行 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.1.命令行配置文件.html" />
+    
+    
+    <link rel="prev" href="4.2.使用模块.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Terraform初步体验.html">
+            
+                <a href="1.Terraform初步体验.html">
+            
+                    
+                    Terraform初步体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Terraform基础概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1.Terraform基础概念——Provider.html">
+            
+                <a href="2.1.Terraform基础概念——Provider.html">
+            
+                    
+                    Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2.Terraform基础概念——状态管理.html">
+            
+                <a href="2.2.Terraform基础概念——状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Terraform代码的书写.html">
+            
+                <a href="3.Terraform代码的书写.html">
+            
+                    
+                    Terraform代码的书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.类型.html">
+            
+                <a href="3.1.类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2.配置语法.html">
+            
+                <a href="3.2.配置语法.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.输入变量.html">
+            
+                <a href="3.3.输入变量.html">
+            
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4.输出值.html">
+            
+                <a href="3.4.输出值.html">
+            
+                    
+                    输出值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3.5.局部值.html">
+            
+                <a href="3.5.局部值.html">
+            
+                    
+                    局部值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6.资源.html">
+            
+                <a href="3.6.资源.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7.数据源.html">
+            
+                <a href="3.7.数据源.html">
+            
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8.表达式.html">
+            
+                <a href="3.8.表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9.重载文件.html">
+            
+                <a href="3.9.重载文件.html">
+            
+                    
+                    重载文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3.10.代码风格规范.html">
+            
+                <a href="3.10.代码风格规范.html">
+            
+                    
+                    代码风格规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Terraform模块.html">
+            
+                <a href="4.Terraform模块.html">
+            
+                    
+                    Terraform模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1.创建模块.html">
+            
+                <a href="4.1.创建模块.html">
+            
+                    
+                    创建模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2.使用模块.html">
+            
+                <a href="4.2.使用模块.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="5.Terraform命令行.html">
+            
+                <a href="5.Terraform命令行.html">
+            
+                    
+                    Terraform命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1.命令行配置文件.html">
+            
+                <a href="5.1.命令行配置文件.html">
+            
+                    
+                    命令行配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2.环境变量.html">
+            
+                <a href="5.2.环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3.资源地址.html">
+            
+                <a href="5.3.资源地址.html">
+            
+                    
+                    资源地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4.apply.html">
+            
+                <a href="5.4.apply.html">
+            
+                    
+                    apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5.console.html">
+            
+                <a href="5.5.console.html">
+            
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="5.6.destroy.html">
+            
+                <a href="5.6.destroy.html">
+            
+                    
+                    destroy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="5.7.fmt.html">
+            
+                <a href="5.7.fmt.html">
+            
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.8.force-unlock.html">
+            
+                <a href="5.8.force-unlock.html">
+            
+                    
+                    force-unlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="5.9.get.html">
+            
+                <a href="5.9.get.html">
+            
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="5.10.graph.html">
+            
+                <a href="5.10.graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="5.11.import.html">
+            
+                <a href="5.11.import.html">
+            
+                    
+                    import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="5.12.init.html">
+            
+                <a href="5.12.init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="5.13.output.html">
+            
+                <a href="5.13.output.html">
+            
+                    
+                    output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="5.14.plan.html">
+            
+                <a href="5.14.plan.html">
+            
+                    
+                    plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="5.15.providers.html">
+            
+                <a href="5.15.providers.html">
+            
+                    
+                    providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="5.16.refresh.html">
+            
+                <a href="5.16.refresh.html">
+            
+                    
+                    refresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="5.17.show.html">
+            
+                <a href="5.17.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="5.18.state.html">
+            
+                <a href="5.18.state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.18.1" data-path="5.18.1.list.html">
+            
+                <a href="5.18.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.2" data-path="5.18.2.mv.html">
+            
+                <a href="5.18.2.mv.html">
+            
+                    
+                    mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.3" data-path="5.18.3.pull.html">
+            
+                <a href="5.18.3.pull.html">
+            
+                    
+                    pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.4" data-path="5.18.4.push.html">
+            
+                <a href="5.18.4.push.html">
+            
+                    
+                    push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.5" data-path="5.18.5.replace-provider.html">
+            
+                <a href="5.18.5.replace-provider.html">
+            
+                    
+                    replace-provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.6" data-path="5.18.6.rm.html">
+            
+                <a href="5.18.6.rm.html">
+            
+                    
+                    rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.7" data-path="5.18.7.show.html">
+            
+                <a href="5.18.7.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="5.19.taint.html">
+            
+                <a href="5.19.taint.html">
+            
+                    
+                    taint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="5.20.validate.html">
+            
+                <a href="5.20.validate.html">
+            
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="5.21.untaint.html">
+            
+                <a href="5.21.untaint.html">
+            
+                    
+                    untaint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="5.22.workspace.html">
+            
+                <a href="5.22.workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.22.1" data-path="5.22.1.list.html">
+            
+                <a href="5.22.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.2" data-path="5.22.2.select.html">
+            
+                <a href="5.22.2.select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.3" data-path="5.22.3.new.html">
+            
+                <a href="5.22.3.new.html">
+            
+                    
+                    new
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.4" data-path="5.22.4.delete.html">
+            
+                <a href="5.22.4.delete.html">
+            
+                    
+                    delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.5" data-path="5.22.5.show.html">
+            
+                <a href="5.22.5.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path=".6.Aha.md">
+            
+                <span>
+            
+                    
+                    Aha
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1.有条件创建.html">
+            
+                <a href="6.1.有条件创建.html">
+            
+                    
+                    有条件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2.依赖反转.html">
+            
+                <a href="6.2.依赖反转.html">
+            
+                    
+                    依赖反转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3.多可用区分布.html">
+            
+                <a href="6.3.多可用区分布.html">
+            
+                    
+                    多可用区分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6.4.provisioner与user_data.html">
+            
+                <a href="6.4.provisioner与user_data.html">
+            
+                    
+                    provisioner与user_data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.后记.html">
+            
+                <a href="7.后记.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Terraform命令行</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="terraform&#x547D;&#x4EE4;&#x884C;">Terraform&#x547D;&#x4EE4;&#x884C;</h1>
+<p>&#x6211;&#x4EEC;&#x5728;&#x524D;&#x9762;&#x7684;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x4E66;&#x5199;&#x548C;&#x7EC4;&#x7EC7;Terraform&#x4EE3;&#x7801;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x8981;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x4F7F;&#x7528;Terraform&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x6765;&#x5E94;&#x7528;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x7BA1;&#x7406;&#x548C;&#x64CD;&#x4F5C;&#x6211;&#x4EEC;&#x7684;&#x4E91;&#x7AEF;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x3002;</p>
+<p>Terraform&#x662F;&#x7528;Go&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x7684;&#x4EA4;&#x4ED8;&#x7269;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x884C;&#x6587;&#x4EF6;&#xFF1A;terraform&#x3002;&#x5728;Terraform&#x6267;&#x884C;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#xFF0C;terraform&#x8FDB;&#x7A0B;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x975E;&#x96F6;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x811A;&#x672C;&#x4EE3;&#x7801;&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5224;&#x65AD;&#x6267;&#x884C;&#x662F;&#x5426;&#x6210;&#x529F;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8F93;&#x5165;terraform&#x6765;&#x67E5;&#x770B;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x5B50;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform
+Usage: terraform <span class="token punctuation">[</span>-version<span class="token punctuation">]</span> <span class="token punctuation">[</span>-help<span class="token punctuation">]</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token punctuation">[</span>args<span class="token punctuation">]</span>
+
+The available commands <span class="token keyword">for</span> execution are listed below.
+The <span class="token function">most</span> common, useful commands are shown first, followed by
+<span class="token function">less</span> common or <span class="token function">more</span> advanced commands. If you&apos;re just getting
+started with Terraform, stick with the common commands. For the
+other commands, please <span class="token builtin class-name">read</span> the <span class="token builtin class-name">help</span> and docs before usage.
+
+Common commands:
+    apply              Builds or changes infrastructure
+    console            Interactive console <span class="token keyword">for</span> Terraform interpolations
+    destroy            Destroy Terraform-managed infrastructure
+    <span class="token function">env</span>                Workspace management
+    <span class="token function">fmt</span>                Rewrites config files to canonical <span class="token function">format</span>
+    get                Download and <span class="token function">install</span> modules <span class="token keyword">for</span> the configuration
+    graph              Create a visual graph of Terraform resources
+    <span class="token function">import</span>             Import existing infrastructure into Terraform
+    init               Initialize a Terraform working directory
+    login              Obtain and save credentials <span class="token keyword">for</span> a remote <span class="token function">host</span>
+    <span class="token builtin class-name">logout</span>             Remove locally-stored credentials <span class="token keyword">for</span> a remote <span class="token function">host</span>
+    output             Read an output from a state <span class="token function">file</span>
+    plan               Generate and show an execution plan
+    providers          Prints a tree of the providers used <span class="token keyword">in</span> the configuration
+    refresh            Update <span class="token builtin class-name">local</span> state <span class="token function">file</span> against real resources
+    show               Inspect Terraform state or plan
+    taint              Manually mark a resource <span class="token keyword">for</span> recreation
+    untaint            Manually unmark a resource as tainted
+    validate           Validates the Terraform files
+    version            Prints the Terraform version
+    workspace          Workspace management
+
+All other commands:
+    <span class="token number">0</span>.12upgrade        Rewrites pre-0.12 module <span class="token builtin class-name">source</span> code <span class="token keyword">for</span> v0.12
+    <span class="token number">0</span>.13upgrade        Rewrites pre-0.13 module <span class="token builtin class-name">source</span> code <span class="token keyword">for</span> v0.13
+    debug              Debug output management <span class="token punctuation">(</span>experimental<span class="token punctuation">)</span>
+    force-unlock       Manually unlock the terraform state
+    push               Obsolete <span class="token builtin class-name">command</span> <span class="token keyword">for</span> Terraform Enterprise legacy <span class="token punctuation">(</span>v1<span class="token punctuation">)</span>
+    state              Advanced state management
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F;bash&#x6216;&#x662F;zsh&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5B89;&#x88C5;&#x81EA;&#x52A8;&#x8865;&#x5168;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform -install-autocomplete
+</code></pre>
+<p>&#x5378;&#x8F7D;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x4E5F;&#x5F88;&#x5BB9;&#x6613;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform -uninstall-autocomplete
+</code></pre>
+<p>&#x76EE;&#x524D;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x5E76;&#x6CA1;&#x6709;&#x8986;&#x76D6;&#x5230;&#x6240;&#x6709;&#x5B50;&#x547D;&#x4EE4;&#x3002;</p>
+<p>Terraform&#x547D;&#x4EE4;&#x884C;&#x4F1A;&#x4E0E;HashiCorp&#x7684;<a href="https://checkpoint.hashicorp.com/" target="_blank">Checkpoint</a>&#x670D;&#x52A1;&#x4EA4;&#x4E92;&#x6765;&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x7248;&#x672C;&#x662F;&#x5426;&#x6709;&#x66F4;&#x65B0;&#x6216;&#x662F;&#x5173;&#x952E;&#x7684;&#x5B89;&#x5168;&#x516C;&#x544A;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6267;&#x884C;terraform version&#x547D;&#x4EE4;&#x6765;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x65B0;&#x7248;&#x672C;&#x53EF;&#x7528;&#x3002;</p>
+<p>Terraform&#x4F1A;&#x6536;&#x96C6;&#x4E00;&#x4E9B;&#x4E0D;&#x6D89;&#x53CA;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x4FE1;&#x606F;&#x6216;&#x662F;&#x4E3B;&#x673A;&#x4FE1;&#x606F;&#x7684;&#x6570;&#x636E;&#x53D1;&#x9001;&#x7ED9;Checkpoint&#x670D;&#x52A1;&#x3002;&#x4E00;&#x4E2A;&#x533F;&#x540D;ID&#x4F1A;&#x88AB;&#x53D1;&#x9001;&#x5230;Checkpoint&#x6765;&#x6D88;&#x9664;&#x91CD;&#x590D;&#x7684;&#x544A;&#x8B66;&#x4FE1;&#x606F;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5173;&#x95ED;&#x4E0E;Checkpoint&#x7684;&#x4EA4;&#x4E92;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;CHECKPOINT_DISABLE&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x4E3A;&#x4EFB;&#x610F;&#x975E;&#x7A7A;&#x503C;&#x6765;&#x5B8C;&#x5168;&#x5173;&#x95ED;HashiCorp&#x6240;&#x6709;&#x4EA7;&#x54C1;&#x4E0E;Checkpoint&#x7684;&#x4EA4;&#x4E92;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x547D;&#x4EE4;&#x884C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x5173;&#x95ED;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>disable_checkpoint&#xFF1A;&#x8BBE;&#x7F6E;&#x4E3A;true&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x5173;&#x95ED;&#x4E0E;Checkpoint&#x7684;&#x4EA4;&#x4E92;</li>
+<li>disable_checkpoint_signature&#xFF1A;&#x8BBE;&#x7F6E;&#x4E3A;true&#x53EF;&#x4EE5;&#x963B;&#x6B62;&#x5411;Checkpoint&#x53D1;&#x9001;&#x533F;&#x540D;ID</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.2.使用模块.html" class="navigation navigation-prev " aria-label="Previous page: 使用模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.1.命令行配置文件.html" class="navigation navigation-next " aria-label="Next page: 命令行配置文件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Terraform命令行","level":"1.6","depth":1,"next":{"title":"命令行配置文件","level":"1.6.1","depth":2,"path":"5.1.命令行配置文件.md","ref":"./5.1.命令行配置文件.md","articles":[]},"previous":{"title":"使用模块","level":"1.5.2","depth":2,"path":"4.2.使用模块.md","ref":"./4.2.使用模块.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","prism-themes","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"prism-themes":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5.Terraform命令行.md","mtime":"2020-12-02T07:23:39.560Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T06:22:05.454Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1382 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用模块 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.Terraform命令行.html" />
+    
+    
+    <link rel="prev" href="4.1.创建模块.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Terraform初步体验.html">
+            
+                <a href="1.Terraform初步体验.html">
+            
+                    
+                    Terraform初步体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Terraform基础概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1.Terraform基础概念——Provider.html">
+            
+                <a href="2.1.Terraform基础概念——Provider.html">
+            
+                    
+                    Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2.Terraform基础概念——状态管理.html">
+            
+                <a href="2.2.Terraform基础概念——状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Terraform代码的书写.html">
+            
+                <a href="3.Terraform代码的书写.html">
+            
+                    
+                    Terraform代码的书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.类型.html">
+            
+                <a href="3.1.类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2.配置语法.html">
+            
+                <a href="3.2.配置语法.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.输入变量.html">
+            
+                <a href="3.3.输入变量.html">
+            
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4.输出值.html">
+            
+                <a href="3.4.输出值.html">
+            
+                    
+                    输出值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3.5.局部值.html">
+            
+                <a href="3.5.局部值.html">
+            
+                    
+                    局部值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6.资源.html">
+            
+                <a href="3.6.资源.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7.数据源.html">
+            
+                <a href="3.7.数据源.html">
+            
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8.表达式.html">
+            
+                <a href="3.8.表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9.重载文件.html">
+            
+                <a href="3.9.重载文件.html">
+            
+                    
+                    重载文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3.10.代码风格规范.html">
+            
+                <a href="3.10.代码风格规范.html">
+            
+                    
+                    代码风格规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Terraform模块.html">
+            
+                <a href="4.Terraform模块.html">
+            
+                    
+                    Terraform模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1.创建模块.html">
+            
+                <a href="4.1.创建模块.html">
+            
+                    
+                    创建模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="4.2.使用模块.html">
+            
+                <a href="4.2.使用模块.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.Terraform命令行.html">
+            
+                <a href="5.Terraform命令行.html">
+            
+                    
+                    Terraform命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1.命令行配置文件.html">
+            
+                <a href="5.1.命令行配置文件.html">
+            
+                    
+                    命令行配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2.环境变量.html">
+            
+                <a href="5.2.环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3.资源地址.html">
+            
+                <a href="5.3.资源地址.html">
+            
+                    
+                    资源地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4.apply.html">
+            
+                <a href="5.4.apply.html">
+            
+                    
+                    apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5.console.html">
+            
+                <a href="5.5.console.html">
+            
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="5.6.destroy.html">
+            
+                <a href="5.6.destroy.html">
+            
+                    
+                    destroy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="5.7.fmt.html">
+            
+                <a href="5.7.fmt.html">
+            
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.8.force-unlock.html">
+            
+                <a href="5.8.force-unlock.html">
+            
+                    
+                    force-unlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="5.9.get.html">
+            
+                <a href="5.9.get.html">
+            
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="5.10.graph.html">
+            
+                <a href="5.10.graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="5.11.import.html">
+            
+                <a href="5.11.import.html">
+            
+                    
+                    import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="5.12.init.html">
+            
+                <a href="5.12.init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="5.13.output.html">
+            
+                <a href="5.13.output.html">
+            
+                    
+                    output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="5.14.plan.html">
+            
+                <a href="5.14.plan.html">
+            
+                    
+                    plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="5.15.providers.html">
+            
+                <a href="5.15.providers.html">
+            
+                    
+                    providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="5.16.refresh.html">
+            
+                <a href="5.16.refresh.html">
+            
+                    
+                    refresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="5.17.show.html">
+            
+                <a href="5.17.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="5.18.state.html">
+            
+                <a href="5.18.state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.18.1" data-path="5.18.1.list.html">
+            
+                <a href="5.18.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.2" data-path="5.18.2.mv.html">
+            
+                <a href="5.18.2.mv.html">
+            
+                    
+                    mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.3" data-path="5.18.3.pull.html">
+            
+                <a href="5.18.3.pull.html">
+            
+                    
+                    pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.4" data-path="5.18.4.push.html">
+            
+                <a href="5.18.4.push.html">
+            
+                    
+                    push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.5" data-path="5.18.5.replace-provider.html">
+            
+                <a href="5.18.5.replace-provider.html">
+            
+                    
+                    replace-provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.6" data-path="5.18.6.rm.html">
+            
+                <a href="5.18.6.rm.html">
+            
+                    
+                    rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.7" data-path="5.18.7.show.html">
+            
+                <a href="5.18.7.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="5.19.taint.html">
+            
+                <a href="5.19.taint.html">
+            
+                    
+                    taint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="5.20.validate.html">
+            
+                <a href="5.20.validate.html">
+            
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="5.21.untaint.html">
+            
+                <a href="5.21.untaint.html">
+            
+                    
+                    untaint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="5.22.workspace.html">
+            
+                <a href="5.22.workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.22.1" data-path="5.22.1.list.html">
+            
+                <a href="5.22.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.2" data-path="5.22.2.select.html">
+            
+                <a href="5.22.2.select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.3" data-path="5.22.3.new.html">
+            
+                <a href="5.22.3.new.html">
+            
+                    
+                    new
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.4" data-path="5.22.4.delete.html">
+            
+                <a href="5.22.4.delete.html">
+            
+                    
+                    delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.5" data-path="5.22.5.show.html">
+            
+                <a href="5.22.5.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path=".6.Aha.md">
+            
+                <span>
+            
+                    
+                    Aha
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1.有条件创建.html">
+            
+                <a href="6.1.有条件创建.html">
+            
+                    
+                    有条件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2.依赖反转.html">
+            
+                <a href="6.2.依赖反转.html">
+            
+                    
+                    依赖反转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3.多可用区分布.html">
+            
+                <a href="6.3.多可用区分布.html">
+            
+                    
+                    多可用区分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="6.4.provisioner与user_data.html">
+            
+                <a href="6.4.provisioner与user_data.html">
+            
+                    
+                    provisioner与user_data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.后记.html">
+            
+                <a href="7.后记.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >使用模块</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F15;&#x7528;&#x6A21;&#x5757;">&#x5F15;&#x7528;&#x6A21;&#x5757;</h1>
+<p>&#x5728;Terraform&#x4EE3;&#x7801;&#x4E2D;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>module</code>&#x5757;&#x3002;</p>
+<p>&#x6BCF;&#x5F53;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x65B0;&#x589E;&#x3001;&#x5220;&#x9664;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;<code>module</code>&#x5757;&#x4E4B;&#x540E;&#xFF0C;&#x90FD;&#x8981;&#x6267;&#x884C;<code>terraform init</code>&#x547D;&#x4EE4;&#x6765;&#x83B7;&#x53D6;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x5E76;&#x5B89;&#x88C5;&#x5230;&#x672C;&#x5730;&#x78C1;&#x76D8;&#x4E0A;&#x3002;</p>
+<h2 id="&#x6A21;&#x5757;&#x6E90;">&#x6A21;&#x5757;&#x6E90;</h2>
+<p><code>module</code>&#x5757;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;<code>source</code>&#x53C2;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x6A21;&#x5757;&#x7684;&#x6E90;&#xFF1B;Terraform&#x76EE;&#x524D;&#x652F;&#x6301;&#x5982;&#x4E0B;&#x6A21;&#x5757;&#x6E90;&#xFF1A;</p>
+<ul>
+<li>&#x672C;&#x5730;&#x8DEF;&#x5F84;</li>
+<li>Terraform Registry</li>
+<li>GitHub</li>
+<li>Bitbucket</li>
+<li>&#x901A;&#x7528;Git&#x3001;Mercurial&#x4ED3;&#x5E93;</li>
+<li>HTTP&#x5730;&#x5740;</li>
+<li>S3 buckets</li>
+<li>GCS buckets</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x540E;&#x9762;&#x4F1A;&#x4E00;&#x4E00;&#x8BB2;&#x89E3;&#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x6E90;&#x7684;&#x4F7F;&#x7528;&#x3002;<code>source</code>&#x4F7F;&#x7528;&#x7684;&#x662F;URL&#x98CE;&#x683C;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x67D0;&#x4E9B;&#x6E90;&#x652F;&#x6301;&#x5728;<code>source</code>&#x53C2;&#x6570;&#x4E2D;&#x901A;&#x8FC7;&#x989D;&#x5916;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x6A21;&#x5757;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x51FA;&#x4E8E;&#x6D88;&#x9664;&#x91CD;&#x590D;&#x4EE3;&#x7801;&#x7684;&#x76EE;&#x7684;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x91CD;&#x6784;&#x6211;&#x4EEC;&#x7684;&#x6839;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;&#x4E00;&#x4E9B;&#x62E5;&#x6709;&#x91CD;&#x590D;&#x6A21;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x91CD;&#x6784;&#x4E3A;&#x53EF;&#x53CD;&#x590D;&#x8C03;&#x7528;&#x7684;&#x5D4C;&#x5165;&#x6A21;&#x5757;&#xFF0C;&#x901A;&#x8FC7;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x6765;&#x5F15;&#x7528;&#x3002;</p>
+<p>&#x8BB8;&#x591A;&#x7684;&#x6A21;&#x5757;&#x6E90;&#x7C7B;&#x578B;&#x90FD;&#x652F;&#x6301;&#x4ECE;&#x5F53;&#x524D;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x4E2D;&#x8BFB;&#x53D6;&#x8BA4;&#x8BC1;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6216;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x4ECB;&#x7ECD;&#x6A21;&#x5757;&#x6E90;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x4ECB;&#x7ECD;&#x5230;&#x8FD9;&#x65B9;&#x9762;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5EFA;&#x8BAE;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x628A;&#x671F;&#x5F85;&#x88AB;&#x91CD;&#x7528;&#x7684;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x58F0;&#x660E;&#x5728;&#x5404;&#x81EA;&#x7684;&#x6839;&#x6A21;&#x5757;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x4F46;&#x662F;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x7684;&#x5D4C;&#x5165;&#x6A21;&#x5757;&#x4E5F;&#x662F;&#x53EF;&#x884C;&#x7684;&#x3002;</p>
+<h3 id="&#x672C;&#x5730;&#x8DEF;&#x5F84;">&#x672C;&#x5730;&#x8DEF;&#x5F84;</h3>
+<p>&#x4F7F;&#x7528;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x53EF;&#x4EE5;&#x4F7F;&#x6211;&#x4EEC;&#x5F15;&#x7528;&#x540C;&#x4E00;&#x9879;&#x76EE;&#x5185;&#x5B9A;&#x4E49;&#x7684;&#x5B50;&#x6A21;&#x5757;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;./consul&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x4EE5;<code>./</code>&#x6216;&#x8005;<code>../</code>&#x4E3A;&#x524D;&#x7F00;&#x6765;&#x6807;&#x660E;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#xFF0C;&#x4EE5;&#x533A;&#x522B;&#x4E8E;&#x4F7F;&#x7528;Terraform Registry&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x5F15;&#x7528;&#x6A21;&#x5757;&#x548C;&#x5176;&#x4ED6;&#x6E90;&#x7C7B;&#x578B;&#x6709;&#x4E00;&#x4E2A;&#x533A;&#x522B;&#xFF0C;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x5F15;&#x7528;&#x7684;&#x6A21;&#x5757;&#x4E0D;&#x9700;&#x8981;&#x4E0B;&#x8F7D;&#x76F8;&#x5173;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x4EE3;&#x7801;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E8E;&#x672C;&#x5730;&#x76F8;&#x5173;&#x8DEF;&#x5F84;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#x4E86;&#x3002;</p>
+<h3 id="terraform-registry">Terraform Registry</h3>
+<p>Registry&#x76EE;&#x524D;&#x662F;Terraform&#x5B98;&#x65B9;&#x529B;&#x63A8;&#x7684;&#x6A21;&#x5757;&#x4ED3;&#x5E93;&#x65B9;&#x6848;&#xFF0C;&#x91C7;&#x7528;&#x4E86;Terraform&#x5B9A;&#x5236;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x652F;&#x6301;&#x7248;&#x672C;&#x5316;&#x7BA1;&#x7406;&#x548C;&#x4F7F;&#x7528;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;<a href="https://registry.terraform.io/" target="_blank">&#x516C;&#x5171;&#x4ED3;&#x5E93;</a>&#x4FDD;&#x5B58;&#x548C;&#x7D22;&#x5F15;&#x4E86;&#x5927;&#x91CF;&#x516C;&#x5171;&#x6A21;&#x5757;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x641C;&#x7D22;&#x5230;&#x5404;&#x79CD;&#x5B98;&#x65B9;&#x548C;&#x793E;&#x533A;&#x63D0;&#x4F9B;&#x7684;&#x9AD8;&#x8D28;&#x91CF;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x8BFB;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Terraform Cloud&#x670D;&#x52A1;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x6A21;&#x5757;&#x4ED3;&#x5E93;&#xFF0C;&#x6216;&#x662F;&#x901A;&#x8FC7;&#x5B9E;&#x73B0;<a href="https://www.terraform.io/docs/registry/api.html" target="_blank">Terraform&#x6A21;&#x5757;&#x6CE8;&#x518C;&#x534F;&#x8BAE;</a>&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x3002;</p>
+<p>&#x516C;&#x5171;&#x4ED3;&#x5E93;&#x7684;&#x7684;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x7528;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>NAMESPACE</span><span class="token punctuation">&gt;</span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>NAME</span><span class="token punctuation">&gt;</span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PROVIDER</span><span class="token punctuation">&gt;</span></span></code>&#x5F62;&#x5F0F;&#x7684;&#x6E90;&#x5730;&#x5740;&#x6765;&#x5F15;&#x7528;&#xFF0C;&#x5728;&#x516C;&#x5171;&#x4ED3;&#x5E93;&#x4E0A;&#x7684;&#x6A21;&#x5757;&#x4ECB;&#x7ECD;&#x9875;&#x9762;&#x4E0A;&#x90FD;&#x5305;&#x542B;&#x4E86;&#x786E;&#x5207;&#x7684;&#x6E90;&#x5730;&#x5740;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;hashicorp/consul/aws&quot;</span>
+  <span class="token property">version</span> <span class="token punctuation">=</span> <span class="token string">&quot;0.1.0&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x6258;&#x7BA1;&#x5728;&#x5176;&#x4ED6;&#x4ED3;&#x5E93;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5728;&#x6E90;&#x5730;&#x5740;&#x5934;&#x90E8;&#x6DFB;&#x52A0;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>HOSTNAME</span><span class="token punctuation">&gt;</span></span>/</code> &#x90E8;&#x5206;&#xFF0C;&#x6307;&#x5B9A;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x4E3B;&#x673A;&#x540D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;app.terraform.io/example-corp/k8s-cluster/azurerm&quot;</span>
+  <span class="token property">version</span> <span class="token punctuation">=</span> <span class="token string">&quot;1.1.0&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F;SaaS&#x7248;&#x672C;&#x7684;Terraform Cloud&#xFF0C;&#x90A3;&#x4E48;&#x6258;&#x7BA1;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x662F; <code>app.terraform.io</code> &#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x79C1;&#x6709;&#x90E8;&#x7F72;&#x7684;Terraform&#x4F01;&#x4E1A;&#x7248;&#xFF0C;&#x90A3;&#x4E48;&#x6258;&#x7BA1;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x5C31;&#x662F;Terraform&#x4F01;&#x4E1A;&#x7248;&#x670D;&#x52A1;&#x7684;&#x4E3B;&#x673A;&#x540D;&#x3002;</p>
+<p>&#x6A21;&#x5757;&#x4ED3;&#x5E93;&#x652F;&#x6301;&#x7248;&#x672C;&#x5316;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;module&#x5757;&#x4E2D;&#x6307;&#x5B9A;&#x6A21;&#x5757;&#x7684;&#x7248;&#x672C;&#x7EA6;&#x675F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x5F15;&#x7528;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x9996;&#x5148;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x8BBE;&#x7F6E;&#x8BBF;&#x95EE;&#x51ED;&#x8BC1;&#x3002;</p>
+<h3 id="github">GitHub</h3>
+<p>Terraform&#x53D1;&#x73B0;source&#x53C2;&#x6570;&#x7684;&#x503C;&#x5982;&#x679C;&#x662F;&#x4EE5;<code>github.com</code>&#x4E3A;&#x524D;&#x7F00;&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;&#x5176;&#x81EA;&#x52A8;&#x8BC6;&#x522B;&#x4E3A;&#x4E00;&#x4E2A;GitHub&#x6E90;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;github.com/hashicorp/example&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;HTTPS&#x534F;&#x8BAE;&#x514B;&#x9686;&#x4ED3;&#x5E93;&#x3002;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;SSH&#x534F;&#x8BAE;&#xFF0C;&#x90A3;&#x4E48;&#x8BF7;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7684;&#x5730;&#x5740;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;git@github.com:hashicorp/example.git&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>GitHub&#x6E90;&#x7684;&#x5904;&#x7406;&#x4E0E;&#x540E;&#x9762;&#x8981;&#x4ECB;&#x7ECD;&#x7684;&#x901A;&#x7528;Git&#x4ED3;&#x5E93;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4ED6;&#x4EEC;&#x83B7;&#x53D6;git&#x51ED;&#x8BC1;&#x548C;&#x901A;&#x8FC7;<code>ref</code>&#x53C2;&#x6570;&#x5F15;&#x7528;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684;&#x65B9;&#x5F0F;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x5982;&#x679C;&#x8981;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x989D;&#x5916;&#x914D;&#x7F6E;git&#x51ED;&#x8BC1;&#x3002;</p>
+<h3 id="bitbucket">Bitbucket</h3>
+<p>Terraform&#x53D1;&#x73B0;source&#x53C2;&#x6570;&#x7684;&#x503C;&#x5982;&#x679C;&#x662F;&#x4EE5;<code>bitbucket.org</code>&#x4E3A;&#x524D;&#x7F00;&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;&#x5176;&#x81EA;&#x52A8;&#x8BC6;&#x522B;&#x4E3A;&#x4E00;&#x4E2A;Bitbucket&#x6E90;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;bitbucket.org/hashicorp/terraform-consul-aws&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x6377;&#x5F84;&#x65B9;&#x6CD5;&#x53EA;&#x9488;&#x5BF9;&#x516C;&#x5171;&#x4ED3;&#x5E93;&#x6709;&#x6548;&#xFF0C;&#x56E0;&#x4E3A;Terraform&#x5FC5;&#x987B;&#x8BBF;&#x95EE;ButBucket API&#x6765;&#x4E86;&#x89E3;&#x4ED3;&#x5E93;&#x4F7F;&#x7528;&#x7684;&#x662F;Git&#x8FD8;&#x662F;Mercurial&#x534F;&#x8BAE;&#x3002;</p>
+<p>Terraform&#x6839;&#x636E;&#x4ED3;&#x5E93;&#x7684;&#x7C7B;&#x578B;&#x6765;&#x51B3;&#x5B9A;&#x5C06;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;Git&#x4ED3;&#x5E93;&#x8FD8;&#x662F;Mercurial&#x4ED3;&#x5E93;&#x6765;&#x5904;&#x7406;&#x3002;&#x540E;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4F1A;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4E3A;&#x8BBF;&#x95EE;&#x4ED3;&#x5E93;&#x914D;&#x7F6E;&#x8BBF;&#x95EE;&#x51ED;&#x8BC1;&#x4EE5;&#x53CA;&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
+<h3 id="&#x901A;&#x7528;git&#x4ED3;&#x5E93;">&#x901A;&#x7528;Git&#x4ED3;&#x5E93;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x5730;&#x5740;&#x5F00;&#x5934;&#x52A0;&#x4E0A;&#x7279;&#x6B8A;&#x7684;<code>git::</code>&#x524D;&#x7F00;&#x6765;&#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x7684;Git&#x4ED3;&#x5E93;&#x3002;&#x5728;&#x524D;&#x7F00;&#x540E;&#x8DDF;&#x968F;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;<a href="https://git-scm.com/docs/git-clone#_git_urls_a_id_urls_a" target="_blank">Git URL</a>&#x3002;</p>
+<p>&#x4F7F;&#x7528;HTTPS&#x548C;SSH&#x534F;&#x8BAE;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;vpc&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;git::https://example.com/vpc.git&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">module<span class="token type variable"> &quot;storage&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;git::ssh://username@example.com/storage.git&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Terraform&#x4F7F;&#x7528;<code>git clone</code>&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x4EE5;Terraform&#x4F1A;&#x4F7F;&#x7528;&#x672C;&#x5730;Git&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x8BBF;&#x95EE;&#x51ED;&#x8BC1;&#x3002;&#x8981;&#x8BBF;&#x95EE;&#x79C1;&#x6709;Git&#x4ED3;&#x5E93;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x914D;&#x7F6E;&#x76F8;&#x5E94;&#x7684;&#x51ED;&#x8BC1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;SSH&#x534F;&#x8BAE;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x7684;SSH&#x8BC1;&#x4E66;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x4EA4;&#x4E92;&#x5F0F;&#x63D0;&#x793A;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;HTTP/HTTPS&#x534F;&#x8BAE;&#xFF0C;&#x6216;&#x662F;&#x5176;&#x4ED6;&#x9700;&#x8981;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;&#x4F5C;&#x4E3A;&#x51ED;&#x636E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x914D;&#x7F6E;<a href="https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage" target="_blank">Git&#x51ED;&#x636E;&#x5B58;&#x50A8;</a>&#x6765;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x51ED;&#x636E;&#x6E90;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Terraform&#x4F1A;&#x514B;&#x9686;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>ref</code>&#x53C2;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x7248;&#x672C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;vpc&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;git::https://example.com/vpc.git?ref=v1.2.0&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>ref&#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x7528;&#x4F5C;git checkout&#x547D;&#x4EE4;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5206;&#x652F;&#x540D;&#x6216;&#x662F;tag&#x540D;&#x3002;</p>
+<p>&#x4F7F;&#x7528;SSH&#x534F;&#x8BAE;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x66F4;&#x63A8;&#x8350;<code>ssh://</code>&#x7684;&#x5730;&#x5740;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;scp&#x98CE;&#x683C;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x6545;&#x610F;&#x5FFD;&#x7565;<code>ssh://</code>&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x53EA;&#x7559;<code>git::</code>&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;storage&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;git::username@example.com:storage.git&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x901A;&#x7528;mercurial&#x4ED3;&#x5E93;">&#x901A;&#x7528;Mercurial&#x4ED3;&#x5E93;</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x5730;&#x5740;&#x5F00;&#x5934;&#x52A0;&#x4E0A;&#x7279;&#x6B8A;&#x7684;hg::&#x524D;&#x7F00;&#x6765;&#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x7684;Mercurial&#x4ED3;&#x5E93;&#x3002;&#x5728;&#x524D;&#x7F00;&#x540E;&#x8DDF;&#x968F;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;<a href="https://www.mercurial-scm.org/repo/hg/help/urls" target="_blank">Mercurial URL</a>&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;vpc&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;hg::http://example.com/vpc.hg&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Terraform&#x4F1A;&#x901A;&#x8FC7;&#x8FD0;&#x884C;<code>hg clone</code>&#x547D;&#x4EE4;&#x4ECE;Mercurial&#x4ED3;&#x5E93;&#x5B89;&#x88C5;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x4EE5;Terraform&#x4F1A;&#x4F7F;&#x7528;&#x672C;&#x5730;Mercurial&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#x8BBF;&#x95EE;&#x51ED;&#x8BC1;&#x3002;&#x8981;&#x8BBF;&#x95EE;&#x79C1;&#x6709;Mercurial&#x4ED3;&#x5E93;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x914D;&#x7F6E;&#x76F8;&#x5E94;&#x7684;&#x51ED;&#x8BC1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;SSH&#x534F;&#x8BAE;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x7684;SSH&#x8BC1;&#x4E66;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x4EA4;&#x4E92;&#x5F0F;&#x63D0;&#x793A;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x3002;</p>
+<p>&#x7C7B;&#x4F3C;Git&#x6E90;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>ref</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x975E;&#x9ED8;&#x8BA4;&#x7684;&#x5206;&#x652F;&#x6216;&#x8005;&#x6807;&#x7B7E;&#x6765;&#x9009;&#x62E9;&#x7279;&#x5B9A;&#x7248;&#x672C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;vpc&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;hg::http://example.com/vpc.hg?ref=v1.2.0&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="http&#x5730;&#x5740;">HTTP&#x5730;&#x5740;</h3>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;HTTP&#x6216;HTTPS&#x5730;&#x5740;&#x65F6;&#xFF0C;Terraform&#x4F1A;&#x5411;&#x6307;&#x5B9A;URL&#x53D1;&#x9001;&#x4E00;&#x4E2A;GET&#x8BF7;&#x6C42;&#xFF0C;&#x671F;&#x5F85;&#x8FD4;&#x56DE;&#x53E6;&#x4E00;&#x4E2A;&#x6E90;&#x5730;&#x5740;&#x3002;&#x8FD9;&#x79CD;&#x95F4;&#x63A5;&#x7684;&#x65B9;&#x6CD5;&#x4F7F;&#x5F97;HTTP&#x53EF;&#x4EE5;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x66F4;&#x590D;&#x6742;&#x7684;&#x6A21;&#x5757;&#x6E90;&#x5730;&#x5740;&#x7684;&#x6307;&#x793A;&#x5668;&#x3002;</p>
+<p>&#x7136;&#x540E;Terraform&#x4F1A;&#x518D;&#x53D1;&#x9001;&#x4E00;&#x4E2A;GET&#x8BF7;&#x6C42;&#x5230;&#x4E4B;&#x524D;&#x54CD;&#x5E94;&#x7684;&#x5730;&#x5740;&#x4E0A;&#xFF0C;&#x5E76;&#x9644;&#x52A0;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x53C2;&#x6570;<code>terraform-get=1</code>&#xFF0C;&#x8FD9;&#x6837;&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5F53;Terraform&#x6765;&#x67E5;&#x8BE2;&#x65F6;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x76F8;&#x5E94;&#x7684;&#x72B6;&#x6001;&#x7801;&#x662F;&#x6210;&#x529F;&#x7684;(200&#x8303;&#x56F4;&#x7684;&#x6210;&#x529F;&#x72B6;&#x6001;&#x7801;)&#xFF0C;Terraform&#x5C31;&#x4F1A;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x4F4D;&#x7F6E;&#x6765;&#x83B7;&#x53D6;&#x4E0B;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#xFF1A;</p>
+<ul>
+<li>&#x54CD;&#x5E94;&#x5934;&#x90E8;&#x7684;<code>X-Terraform-Get</code>&#x503C;</li>
+<li>&#x5982;&#x679C;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#x662F;&#x4E00;&#x4E2A;HTML&#x9875;&#x9762;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x68C0;&#x67E5;&#x540D;&#x4E3A;<code>terraform-get</code>&#x7684; html meta&#x5143;&#x7D20;&#xFF1A;</li>
+</ul>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>terraform-get<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>github.com/hashicorp/example<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>&#x4E0D;&#x7BA1;&#x7528;&#x54EA;&#x79CD;&#x65B9;&#x5F0F;&#x8FD4;&#x56DE;&#x7684;&#x5730;&#x5740;&#xFF0C;Terraform&#x90FD;&#x4F1A;&#x50CF;&#x672C;&#x7AE0;&#x63D0;&#x5230;&#x7684;&#x5176;&#x4ED6;&#x7684;&#x6E90;&#x5730;&#x5740;&#x90A3;&#x6837;&#x5904;&#x7406;&#x5B83;&#x3002;</p>
+<p>&#x5982;&#x679C;HTTP/HTTPS&#x5730;&#x5740;&#x9700;&#x8981;&#x8BA4;&#x8BC1;&#x51ED;&#x8BC1;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;HOME&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;<code>.netrc</code>&#x6587;&#x4EF6;&#xFF0C;&#x8BE6;&#x89C1;<a href="https://ec.haxx.se/usingcurl-netrc.html" target="_blank">&#x76F8;&#x5173;&#x6587;&#x6863;</a></p>
+<p>&#x4E5F;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;Terraform&#x53D1;&#x73B0;&#x5730;&#x5740;&#x6709;&#x7740;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x5B58;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x540E;&#x7F00;&#x540D;&#xFF0C;&#x90A3;&#x4E48;Terraform&#x4F1A;&#x8DF3;&#x8FC7;<code>terraform-get=1</code>&#x91CD;&#x5B9A;&#x5411;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;vpc&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://example.com/vpc-module.zip&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x540E;&#x7F00;&#x540D;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>zip</code></li>
+<li><code>tar.bz2</code>&#x548C;<code>tbz2</code></li>
+<li><code>tar.gz</code>&#x548C;<code>tgz</code></li>
+<li><code>tar.xz</code>&#x548C;<code>txz</code></li>
+</ul>
+<p>&#x5982;&#x679C;HTTP&#x5730;&#x5740;&#x4E0D;&#x4EE5;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x540D;&#x7ED3;&#x5C3E;&#xFF0C;&#x4F46;&#x53C8;&#x7684;&#x786E;&#x6307;&#x5411;&#x6A21;&#x5757;&#x5B58;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>archive</code>&#x53C2;&#x6570;&#x6765;&#x5F3A;&#x5236;&#x6309;&#x7167;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x5904;&#x7406;&#x5730;&#x5740;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;vpc&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://example.com/vpc-module?archive=zip&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="s3-bucket">S3 Bucket</h3>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x6A21;&#x5757;&#x5B58;&#x6863;&#x4FDD;&#x5B58;&#x5728;AWS S3&#x6876;&#x91CC;&#xFF0C;&#x4F7F;&#x7528;<code>s3::</code>&#x4F5C;&#x4E3A;&#x5730;&#x5740;&#x524D;&#x7F00;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x968F;&#x4E00;&#x4E2A;<a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html#access-bucket-intro" target="_blank">S3&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x5730;&#x5740;</a></p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;s3::https://s3-eu-west-1.amazonaws.com/examplecorp-terraform-modules/vpc.zip&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Terraform&#x8BC6;&#x522B;&#x5230;<code>s3::</code>&#x524D;&#x7F00;&#x540E;&#x4F1A;&#x4F7F;&#x7528;AWS&#x98CE;&#x683C;&#x7684;&#x8BA4;&#x8BC1;&#x673A;&#x5236;&#x8BBF;&#x95EE;&#x7ED9;&#x5B9A;&#x5730;&#x5740;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x8FD9;&#x79CD;&#x6E90;&#x5730;&#x5740;&#x4E5F;&#x53EF;&#x4EE5;&#x642D;&#x914D;&#x5176;&#x4ED6;&#x63D0;&#x4F9B;&#x4E86;S3&#x534F;&#x8BAE;&#x517C;&#x5BB9;&#x7684;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x4F7F;&#x7528;&#xFF0C;&#x53EA;&#x8981;&#x4ED6;&#x4EEC;&#x7684;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#x4E0E;AWS&#x76F8;&#x540C;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x4FDD;&#x5B58;&#x5728;S3&#x6876;&#x5185;&#x7684;&#x6A21;&#x5757;&#x5B58;&#x6863;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x5FC5;&#x987B;&#x4E0E;&#x4E0A;&#x9762;HTTP&#x6E90;&#x63D0;&#x5230;&#x7684;&#x652F;&#x6301;&#x7684;&#x683C;&#x5F0F;&#x76F8;&#x540C;&#xFF0C;Terraform&#x4F1A;&#x4E0B;&#x8F7D;&#x5E76;&#x89E3;&#x538B;&#x7F29;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x6A21;&#x5757;&#x5B89;&#x88C5;&#x5668;&#x4F1A;&#x4ECE;&#x4EE5;&#x4E0B;&#x4F4D;&#x7F6E;&#x5BFB;&#x627E;AWS&#x51ED;&#x8BC1;&#xFF0C;&#x6309;&#x7167;&#x4F18;&#x5148;&#x7EA7;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF1A;</p>
+<ul>
+<li><code>AWS_ACCESS_KEY_ID</code>&#x548C;<code>AWS_SECRET_ACCESS_KEY</code>&#x73AF;&#x5883;&#x53D8;&#x91CF;</li>
+<li>HOME&#x76EE;&#x5F55;&#x4E0B;<code>.aws/credentials</code>&#x6587;&#x4EF6;&#x5185;&#x7684;&#x9ED8;&#x8BA4;profile</li>
+<li>&#x5982;&#x679C;&#x662F;&#x5728;AWS EC2&#x4E3B;&#x673A;&#x5185;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x642D;&#x8F7D;&#x7684;IAM&#x4E3B;&#x673A;&#x5B9E;&#x4F8B;&#x914D;&#x7F6E;&#x3002;</li>
+</ul>
+<h3 id="gcs-bucket">GCS Bucket</h3>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x6A21;&#x5757;&#x5B58;&#x6863;&#x4FDD;&#x5B58;&#x5728;&#x8C37;&#x6B4C;&#x4E91;GCS&#x50A8;&#x6876;&#x91CC;&#xFF0C;&#x4F7F;&#x7528;<code>gcs::</code>&#x4F5C;&#x4E3A;&#x5730;&#x5740;&#x524D;&#x7F00;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x968F;&#x4E00;&#x4E2A;<a href="https://cloud.google.com/storage/docs/request-endpoints#typical" target="_blank">GCS&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x5730;&#x5740;</a>&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;gcs::https://www.googleapis.com/storage/v1/modules/foomodule.zip&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6A21;&#x5757;&#x5B89;&#x88C5;&#x5668;&#x4F1A;&#x4F7F;&#x7528;&#x8C37;&#x6B4C;&#x4E91;SDK&#x7684;&#x51ED;&#x636E;&#x6765;&#x8BBF;&#x95EE;GCS&#x3002;&#x8981;&#x8BBE;&#x7F6E;&#x51ED;&#x636E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x8FC7;<code>GOOGLE_APPLICATION_CREDENTIALS</code>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x914D;&#x7F6E;&#x670D;&#x52A1;&#x8D26;&#x53F7;&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;</li>
+<li>&#x5982;&#x679C;&#x662F;&#x5728;&#x8C37;&#x6B4C;&#x4E91;&#x4E3B;&#x673A;&#x4E0A;&#x8FD0;&#x884C;&#x7684;Terraform&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x51ED;&#x636E;&#x3002;&#x8BBF;&#x95EE;<a href="https://cloud.google.com/compute/docs/authentication" target="_blank">&#x76F8;&#x5173;&#x6587;&#x6863;</a>&#x83B7;&#x53D6;&#x5B8C;&#x6574;&#x4FE1;&#x606F;</li>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;<code>gcloud auth application-default login</code>&#x8BBE;&#x7F6E;</li>
+</ul>
+<h2 id="&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6A21;&#x5757;">&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6A21;&#x5757;</h2>
+<p>&#x5F15;&#x7528;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x6216;&#x662F;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x6A21;&#x5757;&#x672C;&#x8EAB;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x4E8E;&#x5B58;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x5185;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&quot;//&quot;&#x8BED;&#x6CD5;&#x6765;&#x6307;&#x5B9A;Terraform&#x4F7F;&#x7528;&#x5B58;&#x6863;&#x5185;&#x7279;&#x5B9A;&#x8DEF;&#x5F84;&#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<ul>
+<li><code>hashicorp/consul/aws//modules/consul-cluster</code></li>
+<li><code>git::https://example.com/network.git//modules/vpc</code></li>
+<li><code>https://example.com/network-module.zip//modules/vpc</code></li>
+<li><code>s3::https://s3-eu-west-1.amazonaws.com/examplecorp-terraform-modules/network.zip//modules/vpc</code></li>
+</ul>
+<p>&#x5982;&#x679C;&#x6E90;&#x5730;&#x5740;&#x4E2D;&#x5305;&#x542B;&#x53C8;&#x53C2;&#x6570;&#xFF0C;&#x4F8B;&#x5982;&#x6307;&#x5B9A;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x53F7;&#x7684;ref&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x628A;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#x653E;&#x5728;&#x53C2;&#x6570;&#x4E4B;&#x524D;&#xFF1A;</p>
+<ul>
+<li><code>git::https://example.com/network.git//modules/vpc?ref=v1.2.0</code></li>
+</ul>
+<p>Terraform&#x4F1A;&#x89E3;&#x538B;&#x7F29;&#x6574;&#x4E2A;&#x5B58;&#x6863;&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x8BFB;&#x53D6;&#x7279;&#x5B9A;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x4E8E;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x6765;&#x8BF4;&#xFF0C;&#x901A;&#x8FC7;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x5F15;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5B58;&#x6863;&#x5185;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x662F;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x6A21;&#x5757;">&#x4F7F;&#x7528;&#x6A21;&#x5757;</h2>
+<p>&#x6211;&#x4EEC;&#x521A;&#x624D;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x7528;source&#x6307;&#x5B9A;&#x6A21;&#x5757;&#x6E90;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x6A21;&#x5757;&#x7406;&#x89E3;&#x6210;&#x7C7B;&#x4F3C;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x540C;&#x51FD;&#x6570;&#x6709;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x8868;&#x548C;&#x8F93;&#x51FA;&#x503C;&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x4ECB;&#x7ECD;&#x8FC7;Terraform&#x4EE3;&#x7801;&#x6709;&#x8F93;&#x5165;&#x53D8;&#x91CF;&#x548C;&#x8F93;&#x51FA;&#x503C;&#x3002;&#x6211;&#x4EEC;&#x5728;module&#x5757;&#x7684;&#x5757;&#x4F53;&#x5185;&#x9664;&#x4E86;source&#x53C2;&#x6570;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x8F93;&#x5165;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;servers&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;./app-cluster&quot;</span>
+
+  <span class="token property">servers</span> <span class="token punctuation">=</span> <span class="token number">5</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x521B;&#x5EFA;<code>./app-cluster</code>&#x6587;&#x4EF6;&#x5939;&#x4E0B;Terraform&#x58F0;&#x660E;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x8D44;&#x6E90;&#xFF0C;&#x8BE5;&#x6A21;&#x5757;&#x7684;servers&#x8F93;&#x5165;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x88AB;&#x6211;&#x4EEC;&#x8BBE;&#x5B9A;&#x6210;&#x4E86;5&#x3002;</p>
+<p>&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x65B0;&#x589E;&#x3001;&#x5220;&#x9664;&#x6216;&#x662F;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x67D0;&#x5757;&#x7684;source&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x8FD0;&#x884C;<code>terraform init</code>&#x547D;&#x4EE4;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x4E0D;&#x4F1A;&#x5347;&#x7EA7;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x6A21;&#x5757;(&#x4F8B;&#x5982;source&#x672A;&#x6307;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x8FC7;&#x53BB;&#x5B89;&#x88C5;&#x4E86;&#x65E7;&#x7248;&#x672C;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x6267;&#x884C;<code>terraform init</code>&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x5230;&#x65B0;&#x7248;&#x672C;)&#xFF1B;&#x53EF;&#x4EE5;&#x6267;&#x884C;<code>terraform init -upgrade</code>&#x6765;&#x5F3A;&#x5236;&#x66F4;&#x65B0;&#x5230;&#x6700;&#x65B0;&#x7248;&#x672C;&#x6A21;&#x5757;&#x3002;</p>
+<h2 id="&#x8BBF;&#x95EE;&#x6A21;&#x5757;&#x8F93;&#x51FA;&#x503C;">&#x8BBF;&#x95EE;&#x6A21;&#x5757;&#x8F93;&#x51FA;&#x503C;</h2>
+<p>&#x5728;&#x6A21;&#x5757;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8D44;&#x6E90;&#x548C;&#x6570;&#x636E;&#x6E90;&#x90FD;&#x662F;&#x88AB;&#x5C01;&#x88C5;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6A21;&#x5757;&#x8C03;&#x7528;&#x8005;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5B83;&#x4EEC;&#x7684;&#x8F93;&#x51FA;&#x5C5E;&#x6027;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x4E00;&#x7CFB;&#x5217;&#x8F93;&#x51FA;&#x503C;&#xFF0C;&#x6765;&#x9009;&#x62E9;&#x6027;&#x5730;&#x8F93;&#x51FA;&#x7279;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x4F9B;&#x6A21;&#x5757;&#x8C03;&#x7528;&#x8005;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;./app-cluster&#x6A21;&#x5757;&#x5B9A;&#x4E49;&#x4E86;&#x540D;&#x4E3A;instance_ids&#x7684;&#x8F93;&#x51FA;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x6A21;&#x5757;&#x7684;&#x8C03;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x50CF;&#x8FD9;&#x6837;&#x5F15;&#x7528;&#x5B83;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;aws_elb&quot;</span></span> <span class="token string">&quot;example&quot;</span> <span class="token punctuation">{</span>
+  <span class="token comment"># ...</span>
+
+  <span class="token property">instances</span> <span class="token punctuation">=</span> module.servers.instance_ids
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x5176;&#x4ED6;&#x7684;&#x6A21;&#x5757;&#x5143;&#x53C2;&#x6570;">&#x5176;&#x4ED6;&#x7684;&#x6A21;&#x5757;&#x5143;&#x53C2;&#x6570;</h2>
+<p>&#x9664;&#x4E86;source&#x4EE5;&#x5916;&#xFF0C;&#x76EE;&#x524D;Terraform&#x8FD8;&#x652F;&#x6301;&#x5728;module&#x5757;&#x4E0A;&#x58F0;&#x660E;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x53EF;&#x9009;&#x5143;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><code>version</code>&#xFF1A;&#x6307;&#x5B9A;&#x5F15;&#x7528;&#x7684;&#x6A21;&#x5757;&#x7248;&#x672C;&#xFF0C;&#x5728;&#x540E;&#x9762;&#x7684;&#x90E8;&#x5206;&#x4F1A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;</li>
+<li><code>count</code>&#x548C;<code>for_each</code>&#xFF1A;&#x8FD9;&#x662F;Terraform 0.13&#x5F00;&#x59CB;&#x652F;&#x6301;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x7C7B;&#x4F3C;resource&#x4E0E;data&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x591A;&#x4E2A;module&#x5B9E;&#x4F8B;</li>
+<li><code>providers</code>&#xFF1A;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x4E00;&#x4E2A;map&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6A21;&#x5757;&#x4E2D;&#x7684;Provider&#x914D;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x540E;&#x9762;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;</li>
+<li>depends_on&#xFF1A;&#x521B;&#x5EFA;&#x6574;&#x4E2A;&#x6A21;&#x5757;&#x548C;&#x5176;&#x4ED6;&#x8D44;&#x6E90;&#x4E4B;&#x95F4;&#x7684;&#x663E;&#x5F0F;&#x4F9D;&#x8D56;&#x3002;&#x76F4;&#x5230;&#x4F9D;&#x8D56;&#x9879;&#x521B;&#x5EFA;&#x5B8C;&#x6BD5;&#xFF0C;&#x5426;&#x5219;&#x58F0;&#x660E;&#x4E86;&#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#x5185;&#x90E8;&#x6240;&#x6709;&#x7684;&#x8D44;&#x6E90;&#x53CA;&#x5185;&#x5D4C;&#x7684;&#x6A21;&#x5757;&#x8D44;&#x6E90;&#x90FD;&#x4F1A;&#x88AB;&#x63A8;&#x8FDF;&#x5904;&#x7406;&#x3002;&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;&#x884C;&#x4E3A;&#x4E0E;&#x8D44;&#x6E90;&#x7684;&#x4F9D;&#x8D56;&#x884C;&#x4E3A;&#x76F8;&#x540C;</li>
+</ul>
+<p>&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x5143;&#x53C2;&#x6570;&#x4EE5;&#x5916;&#xFF0C;<code>lifecycle</code>&#x53C2;&#x6570;&#x76EE;&#x524D;&#x8FD8;&#x4E0D;&#x80FD;&#x88AB;&#x7528;&#x4E8E;&#x6A21;&#x5757;&#xFF0C;&#x4F46;&#x5173;&#x952E;&#x5B57;&#x88AB;&#x4FDD;&#x7559;&#x4EE5;&#x4FBF;&#x5C06;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="&#x6A21;&#x5757;&#x7248;&#x672C;&#x7EA6;&#x675F;">&#x6A21;&#x5757;&#x7248;&#x672C;&#x7EA6;&#x675F;</h2>
+<p>&#x4F7F;&#x7528;registry&#x4F5C;&#x4E3A;&#x6A21;&#x5757;&#x6E90;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;version&#x5143;&#x53C2;&#x6570;&#x7EA6;&#x675F;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5757;&#x7248;&#x672C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">module<span class="token type variable"> &quot;consul&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span>  <span class="token punctuation">=</span> <span class="token string">&quot;hashicorp/consul/aws&quot;</span>
+  <span class="token property">version</span> <span class="token punctuation">=</span> <span class="token string">&quot;0.0.5&quot;</span>
+
+  <span class="token property">servers</span> <span class="token punctuation">=</span> <span class="token number">3</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>version&#x5143;&#x53C2;&#x6570;&#x7684;&#x683C;&#x5F0F;&#x4E0E;Provider&#x7248;&#x672C;&#x7EA6;&#x675F;&#x7684;&#x683C;&#x5F0F;&#x4E00;&#x81F4;&#x3002;&#x5728;&#x6EE1;&#x8DB3;&#x7248;&#x672C;&#x7EA6;&#x675F;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;Terraform&#x4F1A;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x6A21;&#x5757;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x6EE1;&#x8DB3;&#x7EA6;&#x675F;&#x7684;&#x7248;&#x672C;&#x88AB;&#x5B89;&#x88C5;&#x8FC7;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x4E0B;&#x8F7D;&#x7B26;&#x5408;&#x7EA6;&#x675F;&#x7684;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p><code>version</code>&#x5143;&#x53C2;&#x6570;&#x53EA;&#x80FD;&#x914D;&#x5408;registry&#x4F7F;&#x7528;&#xFF0C;<a href="https://registry.terraform.io/" target="_blank">&#x516C;&#x5171;</a>&#x7684;&#x6216;&#x8005;<a href="https://www.terraform.io/docs/cloud/registry/index.html" target="_blank">&#x79C1;&#x6709;</a>&#x7684;&#x6A21;&#x5757;&#x4ED3;&#x5E93;&#x90FD;&#x53EF;&#x4EE5;&#x3002;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x6A21;&#x5757;&#x6E90;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x7248;&#x672C;&#x5316;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x652F;&#x6301;&#x3002;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#x6A21;&#x5757;&#x4E0D;&#x652F;&#x6301;&#x7248;&#x672C;&#x5316;&#x3002;</p>
+<h2 id="&#x591A;&#x5B9E;&#x4F8B;&#x6A21;&#x5757;">&#x591A;&#x5B9E;&#x4F8B;&#x6A21;&#x5757;</h2>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;<code>module</code>&#x5757;&#x4E0A;&#x58F0;&#x660E;<code>for_each</code>&#x6216;&#x8005;<code>count</code>&#x6765;&#x521B;&#x9020;&#x591A;&#x5B9E;&#x4F8B;&#x6A21;&#x5757;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x4E0A;module&#x4E0A;&#x7684;<code>for_each</code>&#x548C;<code>count</code>&#x4E0E;&#x8D44;&#x6E90;&#x3001;&#x6570;&#x636E;&#x6E90;&#x5757;&#x4E0A;&#x7684;&#x4F7F;&#x7528;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token comment"># my_buckets.tf</span>
+<span class="token keyword">module<span class="token type variable"> &quot;bucket&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">for_each</span> <span class="token punctuation">=</span> toset(<span class="token punctuation">[</span><span class="token string">&quot;assets&quot;</span>, <span class="token string">&quot;media&quot;</span><span class="token punctuation">]</span>)
+  <span class="token property">source</span>   <span class="token punctuation">=</span> <span class="token string">&quot;./publish_bucket&quot;</span>
+  <span class="token property">name</span>     <span class="token punctuation">=</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span>each<span class="token punctuation">.</span>key<span class="token punctuation">}</span></span>_bucket&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-hcl"><span class="token comment"># publish_bucket/bucket-and-cloudfront.tf</span>
+<span class="token keyword">variable<span class="token type variable"> &quot;name&quot; </span></span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment"># this is the input parameter of the module</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;aws_s3_bucket&quot;</span></span> <span class="token string">&quot;example&quot;</span> <span class="token punctuation">{</span>
+  <span class="token comment"># Because var.name includes each.key in the calling</span>
+  <span class="token comment"># module block, its value will be different for</span>
+  <span class="token comment"># each instance of this module.</span>
+  <span class="token property">bucket</span> <span class="token punctuation">=</span> var.name
+
+  <span class="token comment"># ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;aws_iam_user&quot;</span></span> <span class="token string">&quot;deploy_user&quot;</span> <span class="token punctuation">{</span>
+  <span class="token comment"># ...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x4F4D;&#x4E8E;<code>./publish_bucket</code>&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x672C;&#x5730;&#x5B50;&#x6A21;&#x5757;&#xFF0C;&#x6A21;&#x5757;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;S3&#x5B58;&#x50A8;&#x75DB;&#xFF0C;&#x5C01;&#x88C5;&#x4E86;&#x6876;&#x7684;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>for_each</code>&#x53C2;&#x6570;&#x58F0;&#x660E;&#x4E86;&#x6A21;&#x5757;&#x7684;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F20;&#x5165;&#x4E00;&#x4E2A;map&#x6216;&#x662F;set&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x503C;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;<code>for_each</code>&#xFF0C;&#x6240;&#x4EE5;&#x5728;module&#x5757;&#x91CC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>each</code>&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5B50;&#x91CC;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;<code>each.key</code>&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>count</code>&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>count.index</code>&#x3002;</p>
+<p>&#x5B50;&#x6A21;&#x5757;&#x91CC;&#x521B;&#x5EFA;&#x7684;&#x8D44;&#x6E90;&#x5728;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x6216;UI&#x4E2D;&#x7684;&#x540D;&#x79F0;&#x4F1A;&#x4EE5;<code>module.module_name[module index]</code>&#x4F5C;&#x4E3A;&#x524D;&#x7F00;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x6CA1;&#x6709;&#x58F0;&#x660E;<code>count</code>&#x6216;&#x8005;<code>for_each</code>&#xFF0C;&#x90A3;&#x4E48;&#x8D44;&#x6E90;&#x5730;&#x5740;&#x5C06;&#x4E0D;&#x5305;&#x542B;module index&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;<code>./publish_bucket</code>&#x6A21;&#x5757;&#x5305;&#x542B;&#x4E86;<code>aws_s3_bucket.example</code>&#x8D44;&#x6E90;&#xFF0C;&#x6240;&#x4EE5;&#x4E24;&#x4E2A;S3&#x6876;&#x5B9E;&#x4F8B;&#x7684;&#x540D;&#x5B57;&#x5206;&#x522B;&#x662F;<code>module.bucket[&quot;assets&quot;].aws_s3_bucket.example</code> &#x4EE5;&#x53CA; <code>module.bucket[&quot;media&quot;].aws_s3_bucket.example</code>&#x3002;</p>
+<h2 id="&#x6A21;&#x5757;&#x5185;&#x7684;provider">&#x6A21;&#x5757;&#x5185;&#x7684;Provider</h2>
+<p>&#x5F53;&#x4EE3;&#x7801;&#x4E2D;&#x58F0;&#x660E;&#x4E86;&#x591A;&#x4E2A;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x8D44;&#x6E90;&#x5982;&#x4F55;&#x4E0E;Provider&#x5B9E;&#x4F8B;&#x5173;&#x8054;&#x5C31;&#x9700;&#x8981;&#x7279;&#x6B8A;&#x8003;&#x8651;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#x90FD;&#x5FC5;&#x987B;&#x5173;&#x8054;&#x4E00;&#x4E2A;Provider&#x914D;&#x7F6E;&#x3002;&#x4E0D;&#x50CF;Terraform&#x5176;&#x4ED6;&#x7684;&#x6982;&#x5FF5;&#xFF0C;Provider&#x914D;&#x7F6E;&#x5728;Terraform&#x9879;&#x76EE;&#x4E2D;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x8DE8;&#x6A21;&#x5757;&#x5171;&#x4EAB;&#x3002;Provider&#x914D;&#x7F6E;&#x58F0;&#x660E;&#x53EA;&#x80FD;&#x653E;&#x5728;&#x6839;&#x6A21;&#x5757;&#x4E2D;&#x3002;</p>
+<p>Provider&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#x7ED9;&#x5B50;&#x6A21;&#x5757;&#xFF1A;&#x9690;&#x5F0F;&#x7EE7;&#x627F;&#xFF0C;&#x6216;&#x662F;&#x663E;&#x5F0F;&#x901A;&#x8FC7;module&#x5757;&#x7684;providers&#x53C2;&#x6570;&#x4F20;&#x9012;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x65E8;&#x5728;&#x88AB;&#x590D;&#x7528;&#x7684;&#x6A21;&#x5757;&#x4E0D;&#x5141;&#x8BB8;&#x58F0;&#x660E;&#x4EFB;&#x4F55;provider&#x5757;&#xFF0C;&#x53EA;&#x6709;&#x4F7F;&#x7528;&quot;&#x4EE3;&#x7406;Provider&quot;&#x6A21;&#x5F0F;&#x7684;&#x60C5;&#x51B5;&#x9664;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x540E;&#x9762;&#x4F1A;&#x4ECB;&#x7ECD;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x51FA;&#x4E8E;&#x5411;&#x524D;&#x517C;&#x5BB9;Terraform 0.10&#x53CA;&#x66F4;&#x65E9;&#x7248;&#x672C;&#x7684;&#x8003;&#x8651;&#xFF0C;Terraform&#x76EE;&#x524D;&#x5728;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x4E2D;&#x53EA;&#x7528;&#x5230;&#x4E86;Terraform 0.10&#x53CA;&#x66F4;&#x65E9;&#x7248;&#x672C;&#x7684;&#x529F;&#x80FD;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x9488;&#x5BF9;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x4E2D;&#x58F0;&#x660E;provider&#x5757;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x88AB;&#x63A8;&#x8350;&#x7684;&#x9057;&#x7559;&#x6A21;&#x5F0F;&#x3002;&#x4E00;&#x4E2A;&#x542B;&#x6709;&#x81EA;&#x5DF1;&#x7684;provider&#x5757;&#x5B9A;&#x4E49;&#x7684;&#x9057;&#x7559;&#x6A21;&#x5757;&#x4E0E;<code>for_each</code>&#x3001;<code>count</code>&#x548C;<code>depends_on</code>&#x7B49;0.13&#x5F15;&#x5165;&#x7684;&#x65B0;&#x7279;&#x6027;&#x662F;&#x4E0D;&#x517C;&#x5BB9;&#x7684;&#x3002;</p>
+<p>Provider&#x914D;&#x7F6E;&#x88AB;&#x7528;&#x4E8E;&#x76F8;&#x5173;&#x8D44;&#x6E90;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#x9500;&#x6BC1;&#x8FDC;&#x7A0B;&#x8D44;&#x6E90;&#x5BF9;&#x8C61;&#x4EE5;&#x53CA;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x7B49;&#x3002;Terraform&#x4F1A;&#x5728;&#x72B6;&#x6001;&#x6587;&#x4EF6;&#x4E2D;&#x4FDD;&#x5B58;&#x9488;&#x5BF9;&#x6700;&#x8FD1;&#x7528;&#x6765;&#x6267;&#x884C;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x53D8;&#x66F4;&#x7684;Provider&#x914D;&#x7F6E;&#x7684;&#x5F15;&#x7528;&#x3002;&#x5F53;&#x4E00;&#x4E2A;resource&#x5757;&#x88AB;&#x5220;&#x9664;&#x65F6;&#xFF0C;&#x72B6;&#x6001;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x8BB0;&#x5F55;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x5B9A;&#x4F4D;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x56E0;&#x4E3A;&#x539F;&#x6765;&#x5305;&#x542B;provider&#x53C2;&#x6570;(&#x5982;&#x679C;&#x58F0;&#x660E;&#x4E86;&#x7684;&#x8BDD;)&#x7684;resource&#x5757;&#x5DF2;&#x7ECF;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#x3002;</p>
+<p>&#x8FD9;&#x5BFC;&#x81F4;&#x4E86;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x5220;&#x9664;&#x6240;&#x6709;&#x76F8;&#x5173;&#x7684;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x5B9A;&#x4E49;&#x4EE5;&#x540E;&#x624D;&#x80FD;&#x5220;&#x9664;&#x4E00;&#x4E2A;Provider&#x914D;&#x7F6E;&#x3002;&#x5982;&#x679C;Terraform&#x53D1;&#x73B0;&#x72B6;&#x6001;&#x6587;&#x4EF6;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;&#x67D0;&#x4E2A;&#x8D44;&#x6E90;&#x5BF9;&#x5E94;&#x7684;Provider&#x914D;&#x7F6E;&#x5DF2;&#x7ECF;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x8981;&#x6C42;&#x4F60;&#x91CD;&#x65B0;&#x7ED9;&#x51FA;&#x76F8;&#x5173;&#x7684;Provider&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x6A21;&#x5757;&#x5185;&#x7684;provider&#x7248;&#x672C;&#x9650;&#x5236;">&#x6A21;&#x5757;&#x5185;&#x7684;Provider&#x7248;&#x672C;&#x9650;&#x5236;</h2>
+<p>&#x867D;&#x7136;Provider&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x5728;&#x6A21;&#x5757;&#x95F4;&#x5171;&#x4EAB;&#xFF0C;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x8FD8;&#x662F;&#x5F97;&#x58F0;&#x660E;&#x5404;&#x81EA;&#x7684;&#x6A21;&#x5757;&#x9700;&#x6C42;&#xFF0C;&#x8FD9;&#x6837;Terraform&#x624D;&#x80FD;&#x51B3;&#x5B9A;&#x4E00;&#x4E2A;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x7684;Provider&#x7248;&#x672C;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B9A;&#x4E49;&#x8FD9;&#x6837;&#x7684;&#x7248;&#x672C;&#x7EA6;&#x675F;&#x8981;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;terraform&#x5757;&#x4E2D;&#x4F7F;&#x7528;<code>required_providers</code>&#x5757;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">terraform</span> <span class="token punctuation">{</span>
+  <span class="token keyword">required_providers</span> <span class="token punctuation">{</span>
+    <span class="token property">aws</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+      <span class="token property">source</span>  <span class="token punctuation">=</span> <span class="token string">&quot;hashicorp/aws&quot;</span>
+      <span class="token property">version</span> <span class="token punctuation">=</span> <span class="token string">&quot;&gt;= 2.7.0&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6709;&#x5173;Provider&#x7684;source&#x548C;&#x7248;&#x672C;&#x7EA6;&#x675F;&#x7684;&#x4FE1;&#x606F;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5728;&#x524D;&#x6587;&#x4E2D;&#x6709;&#x6240;&#x8BB0;&#x8FF0;&#xFF0C;&#x5728;&#x6B64;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;</p>
+<h2 id="&#x9690;&#x5F0F;provider&#x7EE7;&#x627F;">&#x9690;&#x5F0F;Provider&#x7EE7;&#x627F;</h2>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;&#x5728;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x5B50;&#x6A21;&#x5757;&#x4F1A;&#x4ECE;&#x8C03;&#x7528;&#x8005;&#x90A3;&#x91CC;&#x81EA;&#x52A8;&#x5730;&#x7EE7;&#x627F;&#x9ED8;&#x8BA4;&#x7684;Provider&#x914D;&#x7F6E;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x663E;&#x5F0F;provider&#x5757;&#x58F0;&#x660E;&#x4EC5;&#x4F4D;&#x4E8E;&#x6839;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x4E0B;&#x6E38;&#x5B50;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x58F0;&#x660E;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x578B;Provider&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x4F1A;&#x81EA;&#x52A8;&#x5173;&#x8054;&#x5230;&#x6839;&#x6A21;&#x5757;&#x7684;Provider&#x914D;&#x7F6E;&#x4E0A;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x6839;&#x6A21;&#x5757;&#x53EF;&#x80FD;&#x53EA;&#x542B;&#x6709;&#x4E00;&#x4E2A;provider&#x5757;&#x548C;&#x4E00;&#x4E2A;module&#x5757;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">region</span> <span class="token punctuation">=</span> <span class="token string">&quot;us-west-1&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">module<span class="token type variable"> &quot;child&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span> <span class="token punctuation">=</span> <span class="token string">&quot;./child&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5B50;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x4EFB;&#x610F;&#x5173;&#x8054;<code>aws</code>&#x7C7B;&#x578B;Provider&#x7684;&#x8D44;&#x6E90;&#x800C;&#x65E0;&#x9700;&#x989D;&#x5916;&#x58F0;&#x660E;Provider&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;aws_s3_bucket&quot;</span></span> <span class="token string">&quot;example&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">bucket</span> <span class="token punctuation">=</span> <span class="token string">&quot;provider-inherit-example&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5F53;&#x6BCF;&#x79CD;&#x7C7B;&#x578B;&#x7684;Provider&#x90FD;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x65F6;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x53EA;&#x6709;Provider&#x914D;&#x7F6E;&#x4F1A;&#x88AB;&#x5B50;&#x6A21;&#x5757;&#x7EE7;&#x627F;&#xFF0C;Provider&#x7684;source&#x6216;&#x662F;&#x7248;&#x672C;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x5219;&#x4E0D;&#x4F1A;&#x88AB;&#x7EE7;&#x627F;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x5FC5;&#x987B;&#x58F0;&#x660E;&#x5404;&#x81EA;&#x7684;Provider&#x9700;&#x6C42;&#x6761;&#x4EF6;&#xFF0C;&#x8FD9;&#x5728;&#x4F7F;&#x7528;&#x975E;HashiCorp&#x7684;Provider&#x65F6;&#x5C24;&#x5176;&#x91CD;&#x8981;&#x3002;</p>
+<h2 id="&#x663E;&#x5F0F;&#x4F20;&#x9012;provider">&#x663E;&#x5F0F;&#x4F20;&#x9012;Provider</h2>
+<p>&#x5F53;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x6A21;&#x5757;&#x9700;&#x8981;&#x4E0D;&#x540C;&#x7684;Provider&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x8005;&#x5B50;&#x6A21;&#x5757;&#x9700;&#x8981;&#x7684;Provider&#x5B9E;&#x4F8B;&#x4E0E;&#x8C03;&#x7528;&#x8005;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x7684;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;module&#x5757;&#x4E0A;&#x58F0;&#x660E;providers&#x53C2;&#x6570;&#x6765;&#x4F20;&#x9012;&#x5B50;&#x6A21;&#x5757;&#x8981;&#x4F7F;&#x7528;&#x7684;Provider&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token comment"># The default &quot;aws&quot; configuration is used for AWS resources in the root</span>
+<span class="token comment"># module where no explicit provider instance is selected.</span>
+<span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">region</span> <span class="token punctuation">=</span> <span class="token string">&quot;us-west-1&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># An alternate configuration is also defined for a different</span>
+<span class="token comment"># region, using the alias &quot;usw2&quot;.</span>
+<span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">alias</span>  <span class="token punctuation">=</span> <span class="token string">&quot;usw2&quot;</span>
+  <span class="token property">region</span> <span class="token punctuation">=</span> <span class="token string">&quot;us-west-2&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># An example child module is instantiated with the alternate configuration,</span>
+<span class="token comment"># so any AWS resources it defines will use the us-west-2 region.</span>
+<span class="token keyword">module<span class="token type variable"> &quot;example&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span>    <span class="token punctuation">=</span> <span class="token string">&quot;./example&quot;</span>
+  <span class="token property">providers</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+    <span class="token property">aws</span> <span class="token punctuation">=</span> aws.usw2
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>module</code>&#x5757;&#x91CC;&#x7684;<code>providers</code>&#x53C2;&#x6570;&#x7C7B;&#x4F3C;<code>resource</code>&#x5757;&#x91CC;&#x7684;<code>provider</code>&#x53C2;&#x6570;&#xFF0C;&#x533A;&#x522B;&#x662F;&#x524D;&#x8005;&#x63A5;&#x6536;&#x7684;&#x662F;&#x4E00;&#x4E2A;map&#x800C;&#x4E0D;&#x662F;&#x5355;&#x4E2A;string&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x53EF;&#x80FD;&#x542B;&#x6709;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;Provider&#x3002;</p>
+<p>providers&#x7684;map&#x7684;&#x952E;&#x5C31;&#x662F;&#x5B50;&#x6A21;&#x5757;&#x4E2D;&#x58F0;&#x660E;&#x7684;Provider&#x9700;&#x6C42;&#x4E2D;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x503C;&#x5C31;&#x662F;&#x5728;&#x5F53;&#x524D;&#x6A21;&#x5757;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;Provider&#x914D;&#x7F6E;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>module</code>&#x5757;&#x5185;&#x58F0;&#x660E;&#x4E86;<code>providers</code>&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x91CD;&#x8F7D;&#x6240;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x7EE7;&#x627F;&#x884C;&#x4E3A;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x7ED9;&#x5B9A;&#x7684;map&#x8986;&#x76D6;&#x4E86;&#x5B50;&#x6A21;&#x5757;&#x6240;&#x9700;&#x8981;&#x7684;&#x6240;&#x6709;Provider&#x3002;&#x8FD9;&#x907F;&#x514D;&#x4E86;&#x663E;&#x5F0F;&#x8D4B;&#x503C;&#x4E0E;&#x9690;&#x5F0F;&#x7EE7;&#x627F;&#x6DF7;&#x7528;&#x65F6;&#x5E26;&#x6765;&#x7684;&#x6DF7;&#x4E71;&#x548C;&#x610F;&#x5916;&#x3002;</p>
+<p>&#x989D;&#x5916;&#x7684;Provider&#x914D;&#x7F6E;(&#x4F7F;&#x7528;<code>alias</code>&#x53C2;&#x6570;&#x7684;)&#x5C06;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x88AB;&#x5B50;&#x6A21;&#x5757;&#x9690;&#x5F0F;&#x7EE7;&#x627F;&#xFF0C;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x901A;&#x8FC7;providers&#x4F20;&#x9012;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x4E86;&#x4E24;&#x4E2A;AWS&#x533A;&#x57DF;&#x4E4B;&#x95F4;&#x7684;&#x7F51;&#x7EDC;&#x6253;&#x901A;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x6E90;&#x533A;&#x57DF;Provider&#x548C;&#x76EE;&#x6807;&#x533A;&#x57DF;Provider&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6839;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">alias</span>  <span class="token punctuation">=</span> <span class="token string">&quot;usw1&quot;</span>
+  <span class="token property">region</span> <span class="token punctuation">=</span> <span class="token string">&quot;us-west-1&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">alias</span>  <span class="token punctuation">=</span> <span class="token string">&quot;usw2&quot;</span>
+  <span class="token property">region</span> <span class="token punctuation">=</span> <span class="token string">&quot;us-west-2&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">module<span class="token type variable"> &quot;tunnel&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">source</span>    <span class="token punctuation">=</span> <span class="token string">&quot;./tunnel&quot;</span>
+  <span class="token property">providers</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+    <span class="token property">aws.src</span> <span class="token punctuation">=</span> aws.usw1
+    <span class="token property">aws.dst</span> <span class="token punctuation">=</span> aws.usw2
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5B50;&#x76EE;&#x5F55;<code>./tunnel</code>&#x5FC5;&#x987B;&#x5305;&#x542B;&#x50CF;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x90A3;&#x6837;&#x58F0;&#x660E;&quot;Provider&#x4EE3;&#x7406;&quot;&#xFF0C;&#x58F0;&#x660E;&#x6A21;&#x5757;&#x8C03;&#x7528;&#x8005;&#x5FC5;&#x987B;&#x7528;&#x8FD9;&#x4E9B;&#x540D;&#x5B57;&#x4F20;&#x9012;&#x7684;Provider&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">alias</span> <span class="token punctuation">=</span> <span class="token string">&quot;src&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">provider<span class="token type variable"> &quot;aws&quot; </span></span><span class="token punctuation">{</span>
+  <span class="token property">alias</span> <span class="token punctuation">=</span> <span class="token string">&quot;dst&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>./tunnel</code>&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x79CD;&#x8D44;&#x6E90;&#x90FD;&#x5E94;&#x8BE5;&#x901A;&#x8FC7;provider&#x53C2;&#x6570;&#x58F0;&#x660E;&#x5B83;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>aws.src</code>&#x8FD8;&#x662F;<code>aws.dst</code>&#x3002;</p>
+<h2 id="provider&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x5757;">Provider&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x5757;</h2>
+<p>&#x4E00;&#x4E2A;Provider&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x53EA;&#x5305;&#x542B;<code>alias</code>&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x95F4;&#x4F20;&#x9012;Provider&#x914D;&#x7F6E;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#xFF0C;&#x58F0;&#x660E;&#x4E86;&#x6A21;&#x5757;&#x671F;&#x5F85;&#x663E;&#x5F0F;&#x4F20;&#x9012;&#x7684;&#x989D;&#x5916;(&#x5E26;&#x6709;alias&#x7684;)Provider&#x914D;&#x7F6E;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E3A;&#x7A7A;&#x7684;Provider&#x914D;&#x7F6E;&#x5757;&#x4E5F;&#x662F;&#x5408;&#x6CD5;&#x7684;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x3002;&#x53EA;&#x6709;&#x5728;&#x6A21;&#x5757;&#x5185;&#x9700;&#x8981;&#x5E26;<code>alias</code>&#x7684;Provider&#x65F6;&#x624D;&#x9700;&#x8981;&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x5757;&#x3002;&#x5982;&#x679C;&#x6A21;&#x5757;&#x4E2D;&#x53EA;&#x662F;&#x7528;&#x9ED8;&#x8BA4;Provider&#x65F6;&#x8BF7;&#x4E0D;&#x8981;&#x58F0;&#x660E;&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x5757;&#xFF0C;&#x4E5F;&#x4E0D;&#x8981;&#x4EC5;&#x4E3A;&#x4E86;&#x58F0;&#x660E;Provider&#x7248;&#x672C;&#x7EA6;&#x675F;&#x800C;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x5757;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.1.创建模块.html" class="navigation navigation-prev " aria-label="Previous page: 创建模块">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.Terraform命令行.html" class="navigation navigation-next " aria-label="Next page: Terraform命令行">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用模块","level":"1.5.2","depth":2,"next":{"title":"Terraform命令行","level":"1.6","depth":1,"path":"5.Terraform命令行.md","ref":"./5.Terraform命令行.md","articles":[{"title":"命令行配置文件","level":"1.6.1","depth":2,"path":"5.1.命令行配置文件.md","ref":"./5.1.命令行配置文件.md","articles":[]},{"title":"环境变量","level":"1.6.2","depth":2,"path":"5.2.环境变量.md","ref":"./5.2.环境变量.md","articles":[]},{"title":"资源地址","level":"1.6.3","depth":2,"path":"5.3.资源地址.md","ref":"./5.3.资源地址.md","articles":[]},{"title":"apply","level":"1.6.4","depth":2,"path":"5.4.apply.md","ref":"./5.4.apply.md","articles":[]},{"title":"console","level":"1.6.5","depth":2,"path":"5.5.console.md","ref":"./5.5.console.md","articles":[]},{"title":"destroy","level":"1.6.6","depth":2,"path":"5.6.destroy.md","ref":"./5.6.destroy.md","articles":[]},{"title":"fmt","level":"1.6.7","depth":2,"path":"5.7.fmt.md","ref":"./5.7.fmt.md","articles":[]},{"title":"force-unlock","level":"1.6.8","depth":2,"path":"5.8.force-unlock.md","ref":"./5.8.force-unlock.md","articles":[]},{"title":"get","level":"1.6.9","depth":2,"path":"5.9.get.md","ref":"./5.9.get.md","articles":[]},{"title":"graph","level":"1.6.10","depth":2,"path":"5.10.graph.md","ref":"./5.10.graph.md","articles":[]},{"title":"import","level":"1.6.11","depth":2,"path":"5.11.import.md","ref":"./5.11.import.md","articles":[]},{"title":"init","level":"1.6.12","depth":2,"path":"5.12.init.md","ref":"./5.12.init.md","articles":[]},{"title":"output","level":"1.6.13","depth":2,"path":"5.13.output.md","ref":"./5.13.output.md","articles":[]},{"title":"plan","level":"1.6.14","depth":2,"path":"5.14.plan.md","ref":"./5.14.plan.md","articles":[]},{"title":"providers","level":"1.6.15","depth":2,"path":"5.15.providers.md","ref":"./5.15.providers.md","articles":[]},{"title":"refresh","level":"1.6.16","depth":2,"path":"5.16.refresh.md","ref":"./5.16.refresh.md","articles":[]},{"title":"show","level":"1.6.17","depth":2,"path":"5.17.show.md","ref":"./5.17.show.md","articles":[]},{"title":"state","level":"1.6.18","depth":2,"path":"5.18.state.md","ref":"./5.18.state.md","articles":[{"title":"list","level":"1.6.18.1","depth":3,"path":"5.18.1.list.md","ref":"./5.18.1.list.md","articles":[]},{"title":"mv","level":"1.6.18.2","depth":3,"path":"5.18.2.mv.md","ref":"./5.18.2.mv.md","articles":[]},{"title":"pull","level":"1.6.18.3","depth":3,"path":"5.18.3.pull.md","ref":"./5.18.3.pull.md","articles":[]},{"title":"push","level":"1.6.18.4","depth":3,"path":"5.18.4.push.md","ref":"./5.18.4.push.md","articles":[]},{"title":"replace-provider","level":"1.6.18.5","depth":3,"path":"5.18.5.replace-provider.md","ref":"./5.18.5.replace-provider.md","articles":[]},{"title":"rm","level":"1.6.18.6","depth":3,"path":"5.18.6.rm.md","ref":"./5.18.6.rm.md","articles":[]},{"title":"show","level":"1.6.18.7","depth":3,"path":"5.18.7.show.md","ref":"./5.18.7.show.md","articles":[]}]},{"title":"taint","level":"1.6.19","depth":2,"path":"5.19.taint.md","ref":"./5.19.taint.md","articles":[]},{"title":"validate","level":"1.6.20","depth":2,"path":"5.20.validate.md","ref":"./5.20.validate.md","articles":[]},{"title":"untaint","level":"1.6.21","depth":2,"path":"5.21.untaint.md","ref":"./5.21.untaint.md","articles":[]},{"title":"workspace","level":"1.6.22","depth":2,"path":"5.22.workspace.md","ref":"./5.22.workspace.md","articles":[{"title":"list","level":"1.6.22.1","depth":3,"path":"5.22.1.list.md","ref":"./5.22.1.list.md","articles":[]},{"title":"select","level":"1.6.22.2","depth":3,"path":"5.22.2.select.md","ref":"./5.22.2.select.md","articles":[]},{"title":"new","level":"1.6.22.3","depth":3,"path":"5.22.3.new.md","ref":"./5.22.3.new.md","articles":[]},{"title":"delete","level":"1.6.22.4","depth":3,"path":"5.22.4.delete.md","ref":"./5.22.4.delete.md","articles":[]},{"title":"show","level":"1.6.22.5","depth":3,"path":"5.22.5.show.md","ref":"./5.22.5.show.md","articles":[]}]}]},"previous":{"title":"创建模块","level":"1.5.1","depth":2,"path":"4.1.创建模块.md","ref":"./4.1.创建模块.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","prism-themes","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"prism-themes":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.2.使用模块.md","mtime":"2020-12-06T06:03:59.668Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T06:22:05.454Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

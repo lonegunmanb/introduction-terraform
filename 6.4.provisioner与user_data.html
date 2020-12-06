@@ -1,0 +1,1224 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>provisioner与user_data · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7.后记.html" />
+    
+    
+    <link rel="prev" href="6.3.多可用区分布.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Terraform初步体验.html">
+            
+                <a href="1.Terraform初步体验.html">
+            
+                    
+                    Terraform初步体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Terraform基础概念
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2.1.Terraform基础概念——Provider.html">
+            
+                <a href="2.1.Terraform基础概念——Provider.html">
+            
+                    
+                    Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.2.Terraform基础概念——状态管理.html">
+            
+                <a href="2.2.Terraform基础概念——状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Terraform代码的书写.html">
+            
+                <a href="3.Terraform代码的书写.html">
+            
+                    
+                    Terraform代码的书写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.类型.html">
+            
+                <a href="3.1.类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2.配置语法.html">
+            
+                <a href="3.2.配置语法.html">
+            
+                    
+                    配置语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.输入变量.html">
+            
+                <a href="3.3.输入变量.html">
+            
+                    
+                    输入变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4.输出值.html">
+            
+                <a href="3.4.输出值.html">
+            
+                    
+                    输出值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="3.5.局部值.html">
+            
+                <a href="3.5.局部值.html">
+            
+                    
+                    局部值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6.资源.html">
+            
+                <a href="3.6.资源.html">
+            
+                    
+                    资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7.数据源.html">
+            
+                <a href="3.7.数据源.html">
+            
+                    
+                    数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8.表达式.html">
+            
+                <a href="3.8.表达式.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9.重载文件.html">
+            
+                <a href="3.9.重载文件.html">
+            
+                    
+                    重载文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="3.10.代码风格规范.html">
+            
+                <a href="3.10.代码风格规范.html">
+            
+                    
+                    代码风格规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.Terraform模块.html">
+            
+                <a href="4.Terraform模块.html">
+            
+                    
+                    Terraform模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4.1.创建模块.html">
+            
+                <a href="4.1.创建模块.html">
+            
+                    
+                    创建模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="4.2.使用模块.html">
+            
+                <a href="4.2.使用模块.html">
+            
+                    
+                    使用模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.Terraform命令行.html">
+            
+                <a href="5.Terraform命令行.html">
+            
+                    
+                    Terraform命令行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5.1.命令行配置文件.html">
+            
+                <a href="5.1.命令行配置文件.html">
+            
+                    
+                    命令行配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5.2.环境变量.html">
+            
+                <a href="5.2.环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5.3.资源地址.html">
+            
+                <a href="5.3.资源地址.html">
+            
+                    
+                    资源地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="5.4.apply.html">
+            
+                <a href="5.4.apply.html">
+            
+                    
+                    apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="5.5.console.html">
+            
+                <a href="5.5.console.html">
+            
+                    
+                    console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="5.6.destroy.html">
+            
+                <a href="5.6.destroy.html">
+            
+                    
+                    destroy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="5.7.fmt.html">
+            
+                <a href="5.7.fmt.html">
+            
+                    
+                    fmt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="5.8.force-unlock.html">
+            
+                <a href="5.8.force-unlock.html">
+            
+                    
+                    force-unlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="5.9.get.html">
+            
+                <a href="5.9.get.html">
+            
+                    
+                    get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="5.10.graph.html">
+            
+                <a href="5.10.graph.html">
+            
+                    
+                    graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="5.11.import.html">
+            
+                <a href="5.11.import.html">
+            
+                    
+                    import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="5.12.init.html">
+            
+                <a href="5.12.init.html">
+            
+                    
+                    init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="5.13.output.html">
+            
+                <a href="5.13.output.html">
+            
+                    
+                    output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="5.14.plan.html">
+            
+                <a href="5.14.plan.html">
+            
+                    
+                    plan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="5.15.providers.html">
+            
+                <a href="5.15.providers.html">
+            
+                    
+                    providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="5.16.refresh.html">
+            
+                <a href="5.16.refresh.html">
+            
+                    
+                    refresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="5.17.show.html">
+            
+                <a href="5.17.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="5.18.state.html">
+            
+                <a href="5.18.state.html">
+            
+                    
+                    state
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.18.1" data-path="5.18.1.list.html">
+            
+                <a href="5.18.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.2" data-path="5.18.2.mv.html">
+            
+                <a href="5.18.2.mv.html">
+            
+                    
+                    mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.3" data-path="5.18.3.pull.html">
+            
+                <a href="5.18.3.pull.html">
+            
+                    
+                    pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.4" data-path="5.18.4.push.html">
+            
+                <a href="5.18.4.push.html">
+            
+                    
+                    push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.5" data-path="5.18.5.replace-provider.html">
+            
+                <a href="5.18.5.replace-provider.html">
+            
+                    
+                    replace-provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.6" data-path="5.18.6.rm.html">
+            
+                <a href="5.18.6.rm.html">
+            
+                    
+                    rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18.7" data-path="5.18.7.show.html">
+            
+                <a href="5.18.7.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="5.19.taint.html">
+            
+                <a href="5.19.taint.html">
+            
+                    
+                    taint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="5.20.validate.html">
+            
+                <a href="5.20.validate.html">
+            
+                    
+                    validate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="5.21.untaint.html">
+            
+                <a href="5.21.untaint.html">
+            
+                    
+                    untaint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="5.22.workspace.html">
+            
+                <a href="5.22.workspace.html">
+            
+                    
+                    workspace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.22.1" data-path="5.22.1.list.html">
+            
+                <a href="5.22.1.list.html">
+            
+                    
+                    list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.2" data-path="5.22.2.select.html">
+            
+                <a href="5.22.2.select.html">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.3" data-path="5.22.3.new.html">
+            
+                <a href="5.22.3.new.html">
+            
+                    
+                    new
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.4" data-path="5.22.4.delete.html">
+            
+                <a href="5.22.4.delete.html">
+            
+                    
+                    delete
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22.5" data-path="5.22.5.show.html">
+            
+                <a href="5.22.5.show.html">
+            
+                    
+                    show
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path=".6.Aha.md">
+            
+                <span>
+            
+                    
+                    Aha
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="6.1.有条件创建.html">
+            
+                <a href="6.1.有条件创建.html">
+            
+                    
+                    有条件创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="6.2.依赖反转.html">
+            
+                <a href="6.2.依赖反转.html">
+            
+                    
+                    依赖反转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="6.3.多可用区分布.html">
+            
+                <a href="6.3.多可用区分布.html">
+            
+                    
+                    多可用区分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.4" data-path="6.4.provisioner与user_data.html">
+            
+                <a href="6.4.provisioner与user_data.html">
+            
+                    
+                    provisioner与user_data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.后记.html">
+            
+                <a href="7.后记.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >provisioner与user_data</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="provisioner&#x4E0E;userdata">provisioner&#x4E0E;user_data</h1>
+<p>&#x6211;&#x4EEC;&#x5728;&#x4ECB;&#x7ECD;&#x8D44;&#x6E90;&#x65F6;&#x4ECB;&#x7ECD;&#x4E86;&#x9884;&#x7F6E;&#x5668;provisioner&#x3002;&#x540C;&#x65F6;&#x4E0D;&#x5C11;&#x516C;&#x6709;&#x4E91;&#x5382;&#x5546;&#x7684;&#x865A;&#x62DF;&#x673A;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;cloud-init&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x865A;&#x62DF;&#x673A;&#x5B9E;&#x4F8B;&#x7B2C;&#x4E00;&#x6B21;&#x542F;&#x52A8;&#x65F6;&#x6267;&#x884C;&#x4E00;&#x6BB5;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x811A;&#x672C;&#x6765;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#x3002;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x5728;&quot;Terraform&#x521D;&#x6B65;&#x4F53;&#x9A8C;&quot;&#x4E00;&#x7AE0;&#x91CC;&#x4E3E;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5728;UCloud&#x4E3B;&#x673A;&#x7B2C;&#x4E00;&#x6B21;&#x542F;&#x52A8;&#x65F6;&#x6211;&#x4EEC;&#x901A;&#x8FC7;user_data&#x6765;&#x8C03;&#x7528;yum&#x5B89;&#x88C5;&#x5E76;&#x914D;&#x7F6E;&#x4E86;ngnix&#x670D;&#x52A1;&#x3002;&#x9884;&#x7F6E;&#x5668;&#x4E0E;cloud-init&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x7528;&#x54EA;&#x4E00;&#x79CD;&#x5462;&#xFF1F;</p>
+<p>&#x9996;&#x5148;&#x8981;&#x6307;&#x51FA;&#x7684;&#x662F;&#xFF0C;provisioner&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x91CC;&#x660E;&#x786E;&#x6307;&#x51FA;&#xFF0C;&#x7531;&#x4E8E;&#x9884;&#x7F6E;&#x5668;&#x5185;&#x90E8;&#x7684;&#x884C;&#x4E3A;Terraform&#x65E0;&#x6CD5;&#x611F;&#x77E5;&#xFF0C;&#x65E0;&#x6CD5;&#x5C06;&#x5B83;&#x6267;&#x884C;&#x7684;&#x53D8;&#x66F4;&#x7EB3;&#x5165;&#x5230;&#x58F0;&#x660E;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x7BA1;&#x7406;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x9884;&#x7F6E;&#x5668;&#x5E94;&#x88AB;&#x4F5C;&#x4E3A;&#x6700;&#x540E;&#x7684;&#x624B;&#x6BB5;&#x4F7F;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;cloud-init&#x80FD;&#x591F;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4F18;&#x5148;&#x4F7F;&#x7528;cloud-init&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#x4E00;&#x4E9B;cloud-init&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x7684;&#x573A;&#x666F;&#x3002;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x60C5;&#x51B5;&#x662F;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x8981;&#x5728;cloud-init&#x5F53;&#x4E2D;&#x683C;&#x5F0F;&#x5316;&#x5377;&#xFF0C;&#x540E;&#x7EED;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x4E3B;&#x673A;&#x6210;&#x529F;&#x683C;&#x5F0F;&#x5316;&#x5E76;&#x6302;&#x8F7D;&#x5377;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x987A;&#x5229;&#x8FDB;&#x884C;&#x4E0B;&#x53BB;&#x3002;&#x4F46;&#x662F;&#x6BD4;&#x5982;<code>aws_instance</code>&#xFF0C;&#x5B83;&#x7684;&#x521B;&#x5EFA;&#x662F;&#x4E0D;&#x4F1A;&#x7B49;&#x5F85;<code>user_data</code>&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x7684;&#xFF0C;&#x53EA;&#x8981;&#x865A;&#x62DF;&#x673A;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x5F00;&#x59CB;&#x542F;&#x52A8;&#xFF0C;Terraform&#x5C31;&#x4F1A;&#x8BA4;&#x4E3A;&#x8D44;&#x6E90;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x4ECE;&#x800C;&#x7EE7;&#x7EED;&#x540E;&#x7EED;&#x7684;&#x521B;&#x5EFA;&#x4E86;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x76EE;&#x524D;&#x6765;&#x770B;&#x8FD8;&#x662F;&#x53EA;&#x80FD;&#x4F9D;&#x9760;&#x9884;&#x7F6E;&#x5668;&#x3002;&#x6211;&#x4EEC;&#x4EE5;&#x4E00;&#x6BB5;UCloud&#x4E91;&#x4E3B;&#x673A;&#x4EE3;&#x7801;&#x4E3A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;ucloud_instance&quot;</span></span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">availability_zone</span>         <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+  <span class="token property">image_id</span>                  <span class="token punctuation">=</span> data.ucloud_images.centos.images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">instance_type</span>             <span class="token punctuation">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+  <span class="token property">charge_type</span>               <span class="token punctuation">=</span> <span class="token string">&quot;dynamic&quot;</span>
+  <span class="token keyword">network_interface</span> <span class="token punctuation">{</span>
+    <span class="token property">eip_internet_type</span> <span class="token punctuation">=</span> <span class="token string">&quot;bgp&quot;</span>
+    <span class="token property">eip_charge_mode</span>   <span class="token punctuation">=</span> <span class="token string">&quot;traffic&quot;</span>
+    <span class="token property">eip_bandwidth</span>     <span class="token punctuation">=</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+  <span class="token property">delete_eips_with_instance</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+  <span class="token property">root_password</span>             <span class="token punctuation">=</span> var.root_password
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;remote-exec&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token keyword">connection</span> <span class="token punctuation">{</span>
+      <span class="token property">type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;ssh&quot;</span>
+      <span class="token property">host</span>     <span class="token punctuation">=</span> <span class="token punctuation">[</span>for ipset in self.ip_set: ipset.ip if ipset.internet_type<span class="token punctuation">=</span><span class="token punctuation">=</span><span class="token string">&quot;BGP&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+      <span class="token property">user</span>     <span class="token punctuation">=</span> <span class="token string">&quot;root&quot;</span>
+      <span class="token property">password</span> <span class="token punctuation">=</span> var.root_password
+      <span class="token property">timeout</span>  <span class="token punctuation">=</span> <span class="token string">&quot;1h&quot;</span>
+    <span class="token punctuation">}</span>
+    <span class="token property">inline</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;sleep 1h&quot;</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5728;&#x8D44;&#x6E90;&#x58F0;&#x660E;&#x4E2D;&#x9644;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;<code>remote-exec</code>&#x7C7B;&#x578B;&#x7684;&#x9884;&#x7F6E;&#x5668;&#xFF0C;&#x5B83;&#x7684;<code>host</code>&#x53D6;&#x503C;&#x4F7F;&#x7528;&#x4E86;<code>self.ip_set</code>&#xFF0C;<code>self</code>&#x5728;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x6307;&#x4EE3;provisioner&#x6240;&#x5C5E;&#x7684;<code>ucloud_instance.web</code>&#xFF0C;<code>ip_set</code>&#x662F;<code>ucloud_instance</code>&#x7684;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x5C5E;&#x6027;&#xFF0C;&#x5185;&#x542B;&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x5185;&#x7F51;IP&#x4EE5;&#x53CA;&#x7ED1;&#x5B9A;&#x7684;&#x5F39;&#x6027;&#x516C;&#x7F51;IP&#x4FE1;&#x606F;&#x3002;&#x6211;&#x4EEC;&#x7528;&#x4E00;&#x4E2A;<code>for</code>&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;&#x51FA;&#x5F39;&#x6027;&#x516C;&#x7F51;IP&#x5730;&#x5740;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;ssh&#x8FDE;&#x63A5;&#x3002;&#x9884;&#x7F6E;&#x5668;&#x6267;&#x884C;&#x7684;&#x811A;&#x672C;&#x4EE3;&#x7801;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4F11;&#x7720;&#x4E00;&#x5C0F;&#x65F6;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">$ terraform apply -auto-approve
+data.ucloud_images.centos: Refreshing state<span class="token punctuation">..</span>.
+ucloud_instance.web: Creating<span class="token punctuation">..</span>.
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Provisioning with <span class="token string">&apos;remote-exec&apos;</span><span class="token punctuation">..</span>.
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>: Connecting to remote <span class="token function">host</span> via SSH<span class="token punctuation">..</span>.
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Host: <span class="token number">106.75</span>.87.148
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   User: root
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Password: <span class="token boolean">true</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Private key: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Certificate: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   SSH Agent: <span class="token boolean">true</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Checking Host Key: <span class="token boolean">false</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>30s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>: Connecting to remote <span class="token function">host</span> via SSH<span class="token punctuation">..</span>.
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Host: <span class="token number">106.75</span>.87.148
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   User: root
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Password: <span class="token boolean">true</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Private key: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Certificate: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   SSH Agent: <span class="token boolean">true</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Checking Host Key: <span class="token boolean">false</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>40s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>: Connecting to remote <span class="token function">host</span> via SSH<span class="token punctuation">..</span>.
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Host: <span class="token number">106.75</span>.87.148
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   User: root
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Password: <span class="token boolean">true</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Private key: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Certificate: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   SSH Agent: <span class="token boolean">true</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>:   Checking Host Key: <span class="token boolean">false</span>
+ucloud_instance.web <span class="token punctuation">(</span>remote-exec<span class="token punctuation">)</span>: Connected<span class="token operator">!</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>50s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>1m0s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>1m10s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>1m20s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>1m30s elapsed<span class="token punctuation">]</span>
+ucloud_instance.web: Still creating<span class="token punctuation">..</span>. <span class="token punctuation">[</span>1m40s elapsed<span class="token punctuation">]</span>
+<span class="token punctuation">..</span>.
+</code></pre>
+<p>&#x4E0D;&#x51FA;&#x6240;&#x6599;&#x7684;&#x8BDD;&#xFF0C;&#x8BE5;&#x8FC7;&#x7A0B;&#x4F1A;&#x6301;&#x7EED;&#x4E00;&#x5C0F;&#x65F6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x65E0;&#x8BBA;&#x9884;&#x7F6E;&#x5668;&#x811A;&#x672C;&#x4E2D;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x8017;&#x65F6;&#x591A;&#x957F;&#xFF0C;<code>ucloud_instance</code>&#x7684;&#x521B;&#x5EFA;&#x90FD;&#x4F1A;&#x7B49;&#x5F85;&#x5B83;&#x5B8C;&#x6210;&#xFF0C;&#x6216;&#x662F;&#x89E6;&#x53D1;&#x8D85;&#x65F6;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x524D;&#x63D0;&#x662F;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;UCloud&#x4E91;&#x4E3B;&#x673A;&#x7684;&#x8D44;&#x6E90;&#x5B9A;&#x4E49;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x8D44;&#x6E90;&#x65F6;&#x58F0;&#x660E;<code>network_interface</code>&#x5C5E;&#x6027;&#xFF0C;&#x76F4;&#x63A5;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x516C;&#x7F51;IP&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x4E91;&#x5382;&#x5546;Provider&#x65E0;&#x6CD5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x521B;&#x5EFA;&#x4E3B;&#x673A;&#x65F6;&#x7ED1;&#x5B9A;&#x516C;&#x7F51;IP&#xFF0C;&#x800C;&#x662F;&#x5FC5;&#x987B;&#x4E8B;&#x540E;&#x7ED1;&#x5B9A;&#x5F39;&#x6027;IP&#x5462;&#xFF1F;&#x53C8;&#x6216;&#x8005;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x811A;&#x672C;&#x5FC5;&#x987B;&#x5728;&#x4E91;&#x4E3B;&#x673A;&#x6210;&#x529F;&#x7ED1;&#x5B9A;&#x4E86;&#x4E91;&#x76D8;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x6210;&#x529F;&#x8FD0;&#x884C;&#xFF1F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x8FD8;&#x6709;&#x6700;&#x540E;&#x7684;&#x6B66;&#x5668;&#xFF0C;&#x5C31;&#x662F;<code>null_resource</code>&#x3002;</p>
+<p><code>null_resource</code>&#x53EF;&#x80FD;&#x662F;Terraform&#x4F53;&#x7CFB;&#x4E2D;&#x6700;&quot;&#x4E0D;Terraform&quot;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7528;&#x6765;&#x5728;Terraform&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x5F0F;&#x4E16;&#x754C;&#x91CC;&#x5E72;&#x5404;&#x79CD;&#x547D;&#x4EE4;&#x5F0F;&#x810F;&#x6D3B;&#x7684;&#x5DE5;&#x5177;&#x3002;<code>null_resouce</code>&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;resource&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>triggers</code>&#x7684;&#x53C2;&#x6570;&#x4EE5;&#x53CA;<code>id</code>&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x4E0B;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">data <span class="token type variable">&quot;ucloud_images&quot;</span></span> <span class="token string">&quot;centos&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">name_regex</span> <span class="token punctuation">=</span> <span class="token string">&quot;^CentOS 7&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_eip&quot;</span></span> <span class="token string">&quot;eip&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">internet_type</span> <span class="token punctuation">=</span> <span class="token string">&quot;bgp&quot;</span>
+  <span class="token property">bandwidth</span>     <span class="token punctuation">=</span> <span class="token number">1</span>
+  <span class="token property">charge_mode</span>   <span class="token punctuation">=</span> <span class="token string">&quot;traffic&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_disk&quot;</span></span> <span class="token string">&quot;data_disk&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+  <span class="token property">disk_size</span>         <span class="token punctuation">=</span> <span class="token number">10</span>
+  <span class="token property">charge_type</span>       <span class="token punctuation">=</span> <span class="token string">&quot;dynamic&quot;</span>
+  <span class="token property">disk_type</span>         <span class="token punctuation">=</span> <span class="token string">&quot;data_disk&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_instance&quot;</span></span> <span class="token string">&quot;web&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+  <span class="token property">image_id</span>          <span class="token punctuation">=</span> data.ucloud_images.centos.images<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.id
+  <span class="token property">instance_type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;n-standard-1&quot;</span>
+  <span class="token property">charge_type</span>       <span class="token punctuation">=</span> <span class="token string">&quot;dynamic&quot;</span>
+  <span class="token property">root_password</span>     <span class="token punctuation">=</span> var.root_password
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_eip_association&quot;</span></span> <span class="token string">&quot;eip_association&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">eip_id</span>      <span class="token punctuation">=</span> ucloud_eip.eip.id
+  <span class="token property">resource_id</span> <span class="token punctuation">=</span> ucloud_instance.web.id
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;ucloud_disk_attachment&quot;</span></span> <span class="token string">&quot;data_disk&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">availability_zone</span> <span class="token punctuation">=</span> <span class="token string">&quot;cn-bj2-03&quot;</span>
+  <span class="token property">disk_id</span>           <span class="token punctuation">=</span> ucloud_disk.data_disk.id
+  <span class="token property">instance_id</span>       <span class="token punctuation">=</span> ucloud_instance.web.id
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;null_resource&quot;</span></span> <span class="token string">&quot;web_init&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">depends_on</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    ucloud_eip_association.eip_association,
+    ucloud_disk_attachment.data_disk
+  <span class="token punctuation">]</span>
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;remote-exec&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token keyword">connection</span> <span class="token punctuation">{</span>
+      <span class="token property">type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;ssh&quot;</span>
+      <span class="token property">host</span>     <span class="token punctuation">=</span> ucloud_eip.eip.public_ip
+      <span class="token property">user</span>     <span class="token punctuation">=</span> <span class="token string">&quot;root&quot;</span>
+      <span class="token property">password</span> <span class="token punctuation">=</span> var.root_password
+    <span class="token punctuation">}</span>
+    <span class="token property">inline</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;echo hello&quot;</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x9700;&#x8981;&#x8FDC;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x64CD;&#x7EB5;&#x662F;&#x5FC5;&#x987B;&#x5728;&#x4E91;&#x76D8;&#x6302;&#x8F7D;&#x6210;&#x529F;&#x4EE5;&#x540E;&#x624D;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x58F0;&#x660E;&#x4E00;&#x4E2A;<code>null_resource</code>&#xFF0C;&#x628A;provisioner&#x58F0;&#x660E;&#x653E;&#x5728;&#x90A3;&#x91CC;&#xFF0C;&#x901A;&#x8FC7;&#x663E;&#x5F0F;&#x58F0;&#x660E;<code>depends_on</code>&#x786E;&#x4FDD;&#x5B83;&#x7684;&#x6267;&#x884C;&#x4E00;&#x5B9A;&#x662F;&#x5728;&#x4E91;&#x76D8;&#x6302;&#x8F7D;&#x7ED3;&#x675F;&#x4EE5;&#x540E;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#x6211;&#x4EEC;&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x8003;&#x8651;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x4E00;&#x4E9B;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x6211;&#x4EEC;&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x662F;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5728;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x80FD;&#x591F;&#x91CD;&#x65B0;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8FD0;&#x884C;&#x8BE5;&#x811A;&#x672C;&#xFF0C;&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>null_resource</code>&#x7684;<code>triggers</code>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;null_resource&quot;</span></span> <span class="token string">&quot;web_init&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">depends_on</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+    ucloud_eip_association.eip_association,
+    ucloud_disk_attachment.data_disk
+  <span class="token punctuation">]</span>
+  <span class="token property">triggers</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+    <span class="token property">script_hash</span> <span class="token punctuation">=</span> filemd5(<span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token keyword">path</span><span class="token punctuation">.</span><span class="token type variable">module</span><span class="token punctuation">}</span></span>/init.sh&quot;</span>)
+  <span class="token punctuation">}</span>
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;remote-exec&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token keyword">connection</span> <span class="token punctuation">{</span>
+      <span class="token property">type</span>     <span class="token punctuation">=</span> <span class="token string">&quot;ssh&quot;</span>
+      <span class="token property">host</span>     <span class="token punctuation">=</span> ucloud_eip.eip.public_ip
+      <span class="token property">user</span>     <span class="token punctuation">=</span> <span class="token string">&quot;root&quot;</span>
+      <span class="token property">password</span> <span class="token punctuation">=</span> var.root_password
+    <span class="token punctuation">}</span>
+    <span class="token property">script</span> <span class="token punctuation">=</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token keyword">path</span><span class="token punctuation">.</span><span class="token type variable">module</span><span class="token punctuation">}</span></span>/init.sh&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x73B0;&#x5728;provisioner&#x8FD0;&#x884C;&#x7684;&#x811A;&#x672C;&#x662F;&#x901A;&#x8FC7;<code>script</code>&#x53C2;&#x6570;&#x4F20;&#x5165;&#x7684;&#x811A;&#x672C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>filemd5</code>&#x51FD;&#x6570;&#x628A;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x4F20;&#x5165;&#x4E86;<code>triggers</code>&#x3002;<code>triggers</code>&#x4F1A;&#x5728;&#x503C;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#x89E6;&#x53D1;<code>null_resource</code>&#x7684;&#x91CD;&#x5EFA;&#xFF0C;&#x8FD9;&#x6837;&#x811A;&#x672C;&#x53D1;&#x751F;&#x4E9B;&#x8BB8;&#x53D8;&#x5316;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E0A;&#x8FD8;&#x7ED9;&#x51FA;&#x4E86;&#x5BF9;&#x4E8E;<code>triggers</code>&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5999;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-hcl"><span class="token keyword">resource <span class="token type variable">&quot;aws_instance&quot;</span></span> <span class="token string">&quot;cluster&quot;</span> <span class="token punctuation">{</span>
+  <span class="token property">count</span> <span class="token punctuation">=</span> <span class="token number">3</span>
+
+  <span class="token comment"># ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">resource <span class="token type variable">&quot;null_resource&quot;</span></span> <span class="token string">&quot;cluster&quot;</span> <span class="token punctuation">{</span>
+  <span class="token comment"># Changes to any instance of the cluster requires re-provisioning</span>
+  <span class="token property">triggers</span> <span class="token punctuation">=</span> <span class="token punctuation">{</span>
+    <span class="token property">cluster_instance_ids</span> <span class="token punctuation">=</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot;,&quot;</span><span class="token punctuation">,</span> aws_instance<span class="token punctuation">.</span>cluster<span class="token punctuation">.</span><span class="token punctuation">*</span><span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">}</span></span>&quot;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment"># Bootstrap script can run on any instance of the cluster</span>
+  <span class="token comment"># So we just choose the first in this case</span>
+  <span class="token keyword">connection</span> <span class="token punctuation">{</span>
+    <span class="token property">host</span> <span class="token punctuation">=</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token function">element</span><span class="token punctuation">(</span>aws_instance<span class="token punctuation">.</span>cluster<span class="token punctuation">.</span><span class="token punctuation">*</span><span class="token punctuation">.</span>public_ip<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>&quot;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">provisioner<span class="token type variable"> &quot;remote-exec&quot; </span></span><span class="token punctuation">{</span>
+    <span class="token comment"># Bootstrap script called with private_ip of each node in the clutser</span>
+    <span class="token property">inline</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;bootstrap-cluster.sh <span class="token interpolation"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot; &quot;</span><span class="token punctuation">,</span> aws_instance<span class="token punctuation">.</span>cluster<span class="token punctuation">.</span><span class="token punctuation">*</span><span class="token punctuation">.</span>private_ip<span class="token punctuation">)</span><span class="token punctuation">}</span></span>&quot;</span>,
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6240;&#x6709;AWS&#x4E3B;&#x673A;&#x7684;&#x5185;&#x7F51;IP&#x53C2;&#x4E0E;&#x624D;&#x80FD;&#x591F;&#x6210;&#x529F;&#x521D;&#x59CB;&#x5316;&#x96C6;&#x7FA4;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x7C7B;&#x4F3C;Kafka&#x6216;&#x662F;RabbitMQ&#x8FD9;&#x6837;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x96C6;&#x7FA4;&#x8282;&#x70B9;&#x7684;IP&#x5199;&#x5165;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x4F55;&#x786E;&#x4FDD;&#x672A;&#x6765;&#x673A;&#x5668;&#x6570;&#x91CF;&#x53D1;&#x751F;&#x8C03;&#x6574;&#x4EE5;&#x540E;&#xFF0C;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x59CB;&#x7EC8;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x5B8C;&#x6574;&#x7684;&#x96C6;&#x7FA4;&#x5185;&#x7F51;IP&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;<code>triggers</code>&#x5C31;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5B8C;&#x6210;&#x76EE;&#x6807;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x5728;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x4E0D;&#x5141;&#x8BB8;&#x62E5;&#x6709;&#x72EC;&#x7ACB;&#x7684;&#x516C;&#x7F51;IP&#xFF0C;&#x6216;&#x662F;&#x7981;&#x6B62;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x5BF9;&#x5916;&#x670D;&#x52A1;&#x7684;&#x516C;&#x7F51;IP&#x76F4;&#x63A5;&#x8FDE;&#x63A5;ssh&#x3002;&#x8FD9;&#x65F6;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x914D;&#x7F6E;&#x4E00;&#x53F0;&#x5821;&#x5792;&#x673A;&#xFF0C;&#x901A;&#x8FC7;&#x5821;&#x5792;&#x673A;&#x8FDB;&#x884C;&#x8DF3;&#x8F6C;&#x8FDE;&#x63A5;&#x3002;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;<a href="https://www.terraform.io/docs/provisioners/connection.html#connecting-through-a-bastion-host-with-ssh" target="_blank">&#x901A;&#x8FC7;&#x5821;&#x5792;&#x673A;&#x4F7F;&#x7528;SSH&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x83B7;&#x53D6;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x6B64;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.3.多可用区分布.html" class="navigation navigation-prev " aria-label="Previous page: 多可用区分布">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7.后记.html" class="navigation navigation-next " aria-label="Next page: 后记">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"provisioner与user_data","level":"1.7.4","depth":2,"next":{"title":"后记","level":"1.8","depth":1,"path":"7.后记.md","ref":"./7.后记.md","articles":[]},"previous":{"title":"多可用区分布","level":"1.7.3","depth":2,"path":"6.3.多可用区分布.md","ref":"./6.3.多可用区分布.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-highlight","prism","prism-themes","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"prism-themes":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6.4.provisioner与user_data.md","mtime":"2020-12-06T06:03:59.667Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-06T06:22:05.454Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
