@@ -1,1 +1,5 @@
-{}
+{
+  "dependencies": {
+    "gitbook-plugin-sitemap": "^1.2.0"
+  }
+}
