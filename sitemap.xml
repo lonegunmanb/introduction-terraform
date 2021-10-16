@@ -61,5 +61,6 @@
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/6.3.多可用区分布.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/6.4.provisioner与user_data.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/6.5.destroy-provisioner中使用变量.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://lonegunmanb.github.io/introduction-terraform/6.6.利用null_resource的triggers触发其他资源更新.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/7.后记.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
