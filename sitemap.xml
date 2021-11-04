@@ -18,6 +18,7 @@
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/4.Terraform模块.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/4.1.创建模块.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/4.2.使用模块.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://lonegunmanb.github.io/introduction-terraform/4.3.模块元参数.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/5.Terraform命令行.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/5.1.命令行配置文件.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://lonegunmanb.github.io/introduction-terraform/5.2.环境变量.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
